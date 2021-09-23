@@ -3,9 +3,9 @@ title: "Burritos"
 date: 2021-09-23T10:35:08+02:00
 description: "Burritos - Mexikanischer Klassiker"
 tags: [Rezepte]
-featured_image: "/blog/images/burritos.jpg"
+featured_image: "/images/burritos.jpg"
 # images is optional, but needed for showing Twitter Card
-images: [/blog/images/burritos.jpg]
+images: [/images/burritos.jpg]
 categories: Rezepte
 comment: false
 draft: false
