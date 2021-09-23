@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wayland on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/tags/wayland/</link>
+    <description>Recent content in wayland on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Thu, 22 Jul 2021 19:46:41 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/wayland/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Screenshots mit Wayland (Sway)</title>
+      <link>https://cnszde.github.io/blog/posts/wayland-screenshots/</link>
+      <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/wayland-screenshots/</guid>
+      <description>Mein Desktop läuft mit Sway unter Wayland. Viele Screenshot-Programme funktionieren allerdings nur unter X11 oder sind mir zu aufgeblasen. Die Lösung für mich liegt in 2 kleinen Programmen, zum einen in grim und zum anderen in slurp.
+Mit einem kleinen Einzeiler, kann man von einem zuvor markierten Bereich einen Screenshot erstellen.
+grim -g &amp;#34;$(slurp)&amp;#34; screenshot.png Etwas komfortabler geht es mit einem Script:
+$ vim shot.sh
+#!/usr/bin/sh grim -g &amp;#34;$(slurp)&amp;#34; ~/Bilder/screenshot_$(date +%d.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,394 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/</link>
+    <description>Recent content on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Thu, 23 Sep 2021 10:35:08 +0200</lastBuildDate>
+    
+        <atom:link href="https://cnszde.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Burritos</title>
+        <link>https://cnszde.github.io/blog/posts/burritos/</link>
+        <pubDate>Thu, 23 Sep 2021 10:35:08 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/burritos/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/burritos/ -&lt;p&gt;Burrito-Rezept des mexikanischen Klassiker, mit herzhafter Füllung und lecker überbacken. Zutaten für 6 Personen&lt;/p&gt;
+&lt;h2 id=&#34;zutaten&#34;&gt;Zutaten&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2 Zwiebeln&lt;/li&gt;
+&lt;li&gt;2 rote Chilischoten&lt;/li&gt;
+&lt;li&gt;1 Tl Kreuzkümmel&lt;/li&gt;
+&lt;li&gt;1 Tl Koriander&lt;/li&gt;
+&lt;li&gt;2 El Öl&lt;/li&gt;
+&lt;li&gt;400g Rinderhackfleisch&lt;/li&gt;
+&lt;li&gt;1 Knoblauchzehe&lt;/li&gt;
+&lt;li&gt;3 El Tomatenmark&lt;/li&gt;
+&lt;li&gt;1 Dose Mais (425 g EW)&lt;/li&gt;
+&lt;li&gt;1 Dose Kidney-Bohnen (425 g)&lt;/li&gt;
+&lt;li&gt;1 Dose weiße Bohnen (425 g)&lt;/li&gt;
+&lt;li&gt;1 Pk. Tomaten (stückig, 500 g EW)&lt;/li&gt;
+&lt;li&gt;Salz&lt;/li&gt;
+&lt;li&gt;Tabascosauce&lt;/li&gt;
+&lt;li&gt;120 g Chili-Gouda&lt;/li&gt;
+&lt;li&gt;1 Pk. Weizentortillas (6 Stück)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;zubereitung&#34;&gt;Zubereitung&lt;/h2&gt;
+&lt;p&gt;Zwiebeln würfeln. Chilischoten längs aufschlitzen, entkernen, Schoten hacken. Koriander und Kreuzkümmel im Mörser zerstoßen. Öl in einem breiten Topf erhitzen. Hack und Zwiebeln darin unter Rühren anbraten. Knoblauch dazupressen, Chilischote, Gewürze und Tomatenmark zugeben und kurz mitbraten. Mais und weiße Bohnen in einem Sieb abtropfen lassen.&lt;/p&gt;
+&lt;p&gt;Kidneybohnen mit Flüssigkeit, Tomaten und abgetropften Mais und weiße Bohnen zugeben, aufkochen, mit Salz und einigen Spritzern Tabasco würzen und bei mittlerer Hitze 5 Min. kochen lassen. Käse reiben. Eine Auflaufform (28x22 cm) fetten.&lt;/p&gt;
+&lt;p&gt;Die Hälfte der Hackmasse in die Form geben. Tortillas auf der Arbeitsfläche ausbreiten, je 3 El Hack darauf geben, rundherum einen Rand frei lassen. Tortillas aufrollen und in die Form setzen. Restliches Hack um die Tortillas verteilen. Mit Käse bestreuen und im vorgeheizten Backofen bei 200 Grad auf der 2. Schiene von unten 20 Min. überbacken (Gas 3, Umluft nicht empfehlenswert). Dazu passt saure Sahne oder Guacamole.&lt;/p&gt;
+&lt;h2 id=&#34;tipp&#34;&gt;Tipp&lt;/h2&gt;
+&lt;p&gt;Für die Guacamole Fruchtfleisch von 1 reifen Avocado mit 3 El Limettensaft, 1 Tl abgeriebener Limettenschale, Salz und 200 g saurer Sahne pürieren. 1/2-1 Chilischote längs aufschlitzen, entkernen, fein würfeln und unterrühren.&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/burritos/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>CryptSetup Passwort ändern</title>
+        <link>https://cnszde.github.io/blog/posts/crypt_password_aendern/</link>
+        <pubDate>Sat, 18 Sep 2021 12:21:48 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/crypt_password_aendern/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/crypt_password_aendern/ -&lt;p&gt;Das Ändern des Passworts auf einem LUKS-Laufwerk mit nur einem Passwort ist einfach: Terminal öffnen und folgenden Befehl ausführen, indem der aktuelle Standort des Laufwerks durch &amp;ldquo;sdX&amp;rdquo; ersetzt wird. Dann das bestehende Kennwort eingeben, um ein Neues erstellen zu können.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo cryptsetup luksChangeKey /dev/sdX
+&lt;/code&gt;&lt;/pre&gt;- https://cnszde.github.io/blog/posts/crypt_password_aendern/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Screenshots mit Wayland (Sway)</title>
+        <link>https://cnszde.github.io/blog/posts/wayland-screenshots/</link>
+        <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/wayland-screenshots/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/wayland-screenshots/ -&lt;p&gt;Mein Desktop läuft mit &lt;a href=&#34;https://swaywm.org/&#34;&gt;Sway&lt;/a&gt; unter &lt;a href=&#34;https://wayland.freedesktop.org/&#34;&gt;Wayland&lt;/a&gt;. Viele Screenshot-Programme funktionieren allerdings nur unter
+&lt;a href=&#34;https://www.x.org/wiki/&#34;&gt;X11&lt;/a&gt; oder sind mir zu  aufgeblasen.
+Die Lösung für mich liegt in 2 kleinen Programmen, zum einen in &lt;a href=&#34;https://github.com/emersion/grim&#34;&gt;grim&lt;/a&gt; und zum anderen in &lt;a href=&#34;https://github.com/emersion/slurp&#34;&gt;slurp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mit einem kleinen Einzeiler, kann man von einem zuvor markierten Bereich einen Screenshot erstellen.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grim -g &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;$(&lt;/span&gt;slurp&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&lt;/span&gt; screenshot.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Etwas komfortabler geht es mit einem Script:&lt;/p&gt;
+&lt;p&gt;$ vim shot.sh&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;#!/usr/bin/sh
+&lt;/span&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;&lt;/span&gt;grim -g &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;$(&lt;/span&gt;slurp&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&lt;/span&gt; ~/Bilder/screenshot_&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;$(&lt;/span&gt;date +%d.%m-%H:%M&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;)&lt;/span&gt;.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Das Script mit &lt;code&gt;chmod +x shot.sh&lt;/code&gt; ausführbar machen.&lt;/p&gt;
+&lt;p&gt;Der Screenshot wird im eigenen Verzeichniss unter Bilder gespeichert. Zum Unterscheiden der Screenshots werden diese mit aktuellem Datum und Uhrzeit im Dateinamen gespeichert. (z.B. screenshot_22.07-09:12.png)&lt;/p&gt;
+&lt;p&gt;Wenn man das Script noch nach /usr/local/bin kopiert, ist es Systemweit verfügbar.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo cp shot.sh /usr/local/bin/shot&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Man kann es jetzt einfach aus jedem Terminal mit&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ shot&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;aufrufen&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/wayland-screenshots/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Arch Linux installations Script</title>
+        <link>https://cnszde.github.io/blog/posts/arch_install_script/</link>
+        <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/arch_install_script/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/arch_install_script/ -&lt;p&gt;&lt;a href=&#34;https://cnszde.github.io/blog/posts/arch_install_script/&#34;&gt;Hier&lt;/a&gt; habe ich beschrieben wie man &lt;a href=&#34;https://archlinug.org&#34;&gt;Arch Linux&lt;/a&gt;
+verschlüsselt installiert.
+Ich habe nun ein kleines &lt;a href=&#34;https://github.com/cnszde/arch_install&#34;&gt;Script&lt;/a&gt; gebastelt was das ganze automatisiert.&lt;/p&gt;
+&lt;p&gt;Das ganze ist nicht wirklich Einsteigerfreundlich, man sollte schon mal eine Archlinux-Installation gemacht haben.
+Es dient eigentlich nur dazu, das man einiges an Tipparbeit spart.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Aber vorsicht, wenn das Script gestartet wird, gibt es keinerlei rückfragen&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;herunterladen&#34;&gt;Herunterladen&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;git clone git@github.com:cnszde/arch_install.git&lt;/code&gt;&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/arch_install_script/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Waybar - benachrichtigen bei neuen Emails</title>
+        <link>https://cnszde.github.io/blog/posts/python_waybar/</link>
+        <pubDate>Sun, 11 Jul 2021 21:09:46 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/python_waybar/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/python_waybar/ -&lt;p&gt;Für meinen Desktop nutze ich &lt;a href=&#34;https://swaywm.org/&#34;&gt;Sway&lt;/a&gt; zusammen mit der &lt;a href=&#34;https://github.com/Alexays/Waybar&#34;&gt;Waybar&lt;/a&gt;. Da ich meine Emails mit &lt;a href=&#34;http://www.mutt.org/&#34;&gt;Mutt&lt;/a&gt; lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.&lt;/p&gt;
+&lt;p&gt;Das ist relativ leicht mit etwas &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt; zu realsieren.&lt;/p&gt;
+&lt;p&gt;Pyhton muss natürlich installiert sein, zusätzlich wird noch &lt;a href=&#34;https://pypi.org/project/IMAPClient/&#34;&gt;imapclient&lt;/a&gt; benötigt:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;    pip install imapclient
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Folgender Code fragt den Mailserver ab:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ vim ./config/waybar/mail.py&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#228b22&#34;&gt;#!/usr/bin/env python3&lt;/span&gt;
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;email&lt;/span&gt;
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;imaplib&lt;/span&gt;
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;imapclient&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; IMAPClient
+server = IMAPClient(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;MAILSERVER&amp;#39;&lt;/span&gt;, use_uid=&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;True&lt;/span&gt;)
+server.login(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;BENUTZERNAME&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;PASSWORD&amp;#39;&lt;/span&gt;)
+select_info = server.select_folder(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;INBOX&amp;#39;&lt;/span&gt;)
+messages = server.search(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;UNSEEN&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#658b00&#34;&gt;print&lt;/span&gt; (&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; Nachrichten&amp;#34;&lt;/span&gt; % &lt;span style=&#34;color:#658b00&#34;&gt;len&lt;/span&gt;(messages))
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;for&lt;/span&gt; msgid, data &lt;span style=&#34;color:#8b008b&#34;&gt;in&lt;/span&gt; server.fetch(messages, [&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;ENVELOPE&amp;#39;&lt;/span&gt;]).items():
+    envelope = data[&lt;span style=&#34;color:#cd5555&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;ENVELOPE&amp;#39;&lt;/span&gt;]
+    &lt;span style=&#34;color:#658b00&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;id #&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34; received &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&lt;/span&gt; % (msgid, envelope.subject.decode(), envelope.date))
+&lt;span style=&#34;color:#cd5555&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;Logging out&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Natürlich müssen bei &lt;strong&gt;MAILSERVER&lt;/strong&gt;, &lt;strong&gt;BENUTZERNAME&lt;/strong&gt; und &lt;strong&gt;PASSWORD&lt;/strong&gt; die eigenen Daten eingetragen werden&lt;/p&gt;
+&lt;p&gt;Das Script mit &lt;code&gt;chmod +x mail.py&lt;/code&gt; noch ausführbar machen und man kann es direkt mit &lt;code&gt;~/.config/waybar/mail.py&lt;/code&gt; testen. Wenn das funktioniert kann man es in die Konfiguration der Waybar einfügen&lt;/p&gt;
+&lt;p&gt;In der &lt;code&gt;~/.config/waybar/config&lt;/code&gt; fügt man &lt;em&gt;custom/mail&lt;/em&gt; in der gewünschten Position hinzu, z.B. so:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-config&#34; data-lang=&#34;config&#34;&gt;    [...]
+     &amp;quot;modules-left&amp;quot;: [&amp;quot;sway/workspaces&amp;quot;, &amp;quot;sway/mode&amp;quot;],
+        &amp;quot;modules-center&amp;quot;: [&amp;quot;sway/window&amp;quot;],
+        &amp;quot;modules-right&amp;quot;: [&amp;quot;mpd&amp;quot;, &amp;quot;pulseaudio&amp;quot;, &amp;quot;custom/mail&amp;quot;, &amp;quot;network&amp;quot;, &amp;quot;battery&amp;quot;, &amp;quot;custom/weather&amp;quot;, &amp;quot;clock&amp;quot;, &amp;quot;tray&amp;quot;],
+        &amp;quot;sway/window&amp;quot;: {
+    [...]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In der gleichen Datei muss noch der zugehörige Teil zum Anzeigen, bzw. Abfragen der Mail eingetragen werden:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-config&#34; data-lang=&#34;config&#34;&gt;    [...]
+     &amp;quot;custom/mail&amp;quot;: {
+            &amp;quot;format&amp;quot;:{},
+            &amp;quot;interval&amp;quot;: 360,
+            &amp;quot;exec&amp;quot;: &amp;quot;~/.config/waybar/mail.py&amp;quot;,
+            &amp;quot;on-click&amp;quot;: &amp;quot;exec mutt&amp;quot;
+    		},
+    [...] 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Der &lt;em&gt;interval&lt;/em&gt; bezieht sich auf Sekunden und fragt das Script alle 5 Minuten ab, ob neue Emails da sind.&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/python_waybar/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Pulseaudio durch Pipewire ersetzen</title>
+        <link>https://cnszde.github.io/blog/posts/arch_pipewire/</link>
+        <pubDate>Fri, 09 Jul 2021 21:09:01 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/arch_pipewire/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/arch_pipewire/ -&lt;p&gt;&lt;a href=&#34;https://pipewire.org/&#34;&gt;PipeWire&lt;/a&gt;, das Low-Level-Multimedia-Framework soll bei Audio und Video das Ruder übernehmen.&lt;/p&gt;
+&lt;p&gt;Es soll Aufnahme und Wiedergabe sowohl von Audio als auch von Video mit minimaler Latenz und Unterstützung für PulseAudio-, JACK-, ALSA- und GStreamer-basierte Anwendungen bieten.&lt;/p&gt;
+&lt;p&gt;PulseAudio lässt sich unter &lt;a href=&#34;https://archlinux.org&#34;&gt;Arch Linux&lt;/a&gt; sehr schnell ersetzen:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        sudo pacman -S pipewire pipewire-pulse
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Natürlich muss die Abfrage ob PulseAudio entfernet werden soll mit ‘j’ bestätigt werden. Ob PipeWire funktioniert kann mit &lt;em&gt;pactl&lt;/em&gt; überprüft werden&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ pactl info
+ ----------
+		Server String: /run/user/1000/pulse/native
+		Library Protocol Version: &lt;span style=&#34;color:#b452cd&#34;&gt;34&lt;/span&gt;
+		Server Protocol Version: &lt;span style=&#34;color:#b452cd&#34;&gt;35&lt;/span&gt;
+		Is Local: yes
+        Client Index: &lt;span style=&#34;color:#b452cd&#34;&gt;53&lt;/span&gt;
+        Tile Size: &lt;span style=&#34;color:#b452cd&#34;&gt;65472&lt;/span&gt;
+        User Name: christian
+        Host Name: coldbeer
+        Server Name: PulseAudio (on PipeWire 0.3.31)
+        Server Version: 14.0.0
+        Default Sample Specification: float32le 2ch 48000Hz
+        Default Channel Map: front-left,front-right
+        Default Sink: alsa_output.pci-0000_00_1b.0.analog-stereo
+        Default Source: alsa_input.pci-0000_00_1b.0.analog-stereo
+        Cookie: 1966:7e37
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Das war es schon. Natürlich gibt es im &lt;a href=&#34;https://wiki.archlinux.org/title/PipeWire&#34;&gt;Wiki&lt;/a&gt; noch einiges mehr zu PipeWire.&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/arch_pipewire/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Verschlüsselte Arch Linux installation</title>
+        <link>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</link>
+        <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/ -&lt;p&gt;Ich beschreibe hier &lt;strong&gt;mein&lt;/strong&gt; vorgehen &lt;a href=&#34;https://archlinux.org&#34;&gt;Arch&lt;/a&gt; verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.&lt;/p&gt;
+&lt;p&gt;Ich werde auch nicht das erstellen des USB-Sticks / CD des &lt;a href=&#34;https://archlinux.org/download/&#34;&gt;Iso&lt;/a&gt; erklären und auch nicht das herstellen einer Internetverbindung, etwas mitarbeit darf schon sein, es ist also &lt;strong&gt;keine&lt;/strong&gt; &lt;em&gt;Copy und Paste&lt;/em&gt; Anleitung.&lt;/p&gt;
+&lt;p&gt;Eine gute Anlaufstelle bei Problemen ist natürlich das &lt;a href=&#34;https://wiki.archlinux.org/&#34;&gt;Wiki&lt;/a&gt; von Archlinux. Dort stehen die gleichen Informationen wie hier, allerdings wesentlich ausführlicher.&lt;/p&gt;
+&lt;p&gt;Partitionsschema wird sein (bis auf boot ist das alles natürlich änderbar):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;512 MB boot&lt;/li&gt;
+&lt;li&gt;8 GB swap&lt;/li&gt;
+&lt;li&gt;40 GB root&lt;/li&gt;
+&lt;li&gt;Rest für das home Verzeichniss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;partition-erstellen&#34;&gt;Partition erstellen:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        gdisk /dev/sda
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Boot - Partition&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alle Partitionen auf der Festplatte werden gelöscht: „o“&lt;/li&gt;
+&lt;li&gt;Neue Partition anlegen: „n“&lt;/li&gt;
+&lt;li&gt;Als erste Partition festlegen: „1“&lt;/li&gt;
+&lt;li&gt;Ersten Sektor auf 2048 setzen: [ENTER]&lt;/li&gt;
+&lt;li&gt;Letzten Sektor setzen / auf 512 MB Partitionsgröße setzen: „+512M“&lt;/li&gt;
+&lt;li&gt;„ef00“ als Partitionstyp wählen: „ef00“&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hauptpartition&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Neue Partition anlegen: „n&amp;quot;&lt;/li&gt;
+&lt;li&gt;Als zweite Partition festlegen: „2“&lt;/li&gt;
+&lt;li&gt;Ersten Sektor wählen: [ENTER]&lt;/li&gt;
+&lt;li&gt;Letzten Sektor wählen: [ENTER]&lt;/li&gt;
+&lt;li&gt;Partitionstyp wählen: [ENTER]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mit ‘w’ werden die Änderungen geschrieben, was natürlich mit ‘y’ bestätigt werden muss&lt;/p&gt;
+&lt;h2 id=&#34;verschlüsselung-einrichten&#34;&gt;Verschlüsselung einrichten&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        cryptsetup -c aes-xts-plain -y -s &lt;span style=&#34;color:#b452cd&#34;&gt;512&lt;/span&gt; luksFormat /dev/sda2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;lvm-einrichten&#34;&gt;LVM einrichten&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Öffnen der virtuellen Partition&lt;/span&gt;
+        cryptsetup luksOpen /dev/sda2 lvm
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## LVM aktivieren&lt;/span&gt;
+        pvcreate /dev/mapper/lvm
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Volume Gruppe erstellen&lt;/span&gt;
+        vgreate main /dev/mapper/lvm
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## swap Partition erstellen&lt;/span&gt;
+        lvcreate -L 8G -n swap main
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## root Partition erstellen&lt;/span&gt;
+        lvcreate -L 40G -n root main
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## home bekommt den Rest&lt;/span&gt;
+        lvcreate -l 100%FREE -n home main
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## jetzt noch swap erstellen und aktivieren&lt;/span&gt;
+        mkswap /dev/mapper/main-swap
+        swapon /dev/mapper/main-swap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;formatieren-und-mounten&#34;&gt;Formatieren und mounten&lt;/h2&gt;
+&lt;p&gt;Die Partitionen müssen noch formatiert werden&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;            &lt;span style=&#34;color:#228b22&#34;&gt;## formatieren&lt;/span&gt;
+        mkfs.vfat /dev/sda1 
+        mkfs.ext4 /dev/mapper/main-root
+        mkfs.ext4 /dev/mapper/main-home
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## mounten der root Partition&lt;/span&gt;
+        mount /dev/mapper/main-root /mnt
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Verzeichnisse für boot und home erstellen&lt;/span&gt;
+        mkdir /mnt/boot
+        mkdir /mnt/home
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Den rest einhängen&lt;/span&gt;
+        mount /dev/sda1 /mnt/boot
+        mount /dev/mapper/main-home /mnt/home
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;basissystem-installieren&#34;&gt;Basissystem installieren&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        pacstrap /mnt/ base base-devel linux linux-firmware networkmanager lvm2 iwd vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;fstab-erzeugen&#34;&gt;fstab erzeugen&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        genfstab -p /mnt &amp;gt; /mnt/etc/fstab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Es sollten 4 einträge in der /mnt/etc/fstab zu sehen sein.&lt;/p&gt;
+&lt;h2 id=&#34;konfigurieren&#34;&gt;Konfigurieren&lt;/h2&gt;
+&lt;p&gt;Das kann in das “gechrooted” werden um dort noch so ein paar kleinigkeiten (Tastatur, Sprache, Zeitzone usw. ) einzustellen.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;            &lt;span style=&#34;color:#228b22&#34;&gt;## chroot ins System&lt;/span&gt;
+        arch-chroot /mnt
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## hostname setzen&lt;/span&gt;
+        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; computer &amp;gt;  /etc/hostname
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Sprache&lt;/span&gt;
+        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;LANG&lt;/span&gt;=de_DE.UTF-8 &amp;gt; /etc/locale.conf
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Tastaturbelegung&lt;/span&gt;
+        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;KEYMAP&lt;/span&gt;=de-latin1 &amp;gt; /etc/vconsole.conf
+        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;FONT&lt;/span&gt;=lat9w-16 &amp;gt;&amp;gt; /etc/vconsole.conf
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Spracheinstellung (Locale) setzen&lt;/span&gt;
+        vim /etc/locale.gen
+                &lt;span style=&#34;color:#228b22&#34;&gt;## das # am Anfang folgender Zeilen entfernen: &lt;/span&gt;
+                    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE.UTF-8 UTF-8&lt;/span&gt;
+                    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE ISO-8859-1&lt;/span&gt;
+                    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE@euro ISO-8859-15&lt;/span&gt;
+                    &lt;span style=&#34;color:#228b22&#34;&gt;#en_US.UTF-8&lt;/span&gt;
+        locale-gen
+        
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Zeitzone setzen&lt;/span&gt;
+        ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;kernel---image-erstellen&#34;&gt;Kernel - Image erstellen&lt;/h2&gt;
+&lt;p&gt;Damit das System beim booten alle nötigen Module laden kann, muss die mkinitcpio angepasst werden.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;                &lt;span style=&#34;color:#228b22&#34;&gt;## In der datei /etc/mkinitcpio.conf folgendes ändern&lt;/span&gt;
+        &lt;span style=&#34;color:#00688b&#34;&gt;MODULES&lt;/span&gt;=(ext4)
+        &lt;span style=&#34;color:#00688b&#34;&gt;HOOKS&lt;/span&gt;=(base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)
+                &lt;span style=&#34;color:#228b22&#34;&gt;## Kernel neu &amp;#34;bauen&amp;#34;&lt;/span&gt;
+        mkinitcpio -p linux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;bootloader-installieren&#34;&gt;Bootloader installieren&lt;/h2&gt;
+&lt;p&gt;Ich nehme den UEFI - Bootloader von systemd, der ist einfach und unkompliziert.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        bootctl install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Die folgenden Datei muss angelegt werden&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        vim /boot/loader/entries/arch.conf
+            &lt;span style=&#34;color:#228b22&#34;&gt;## mit folgendem Inhalt&lt;/span&gt;
+        title    Arch Linux
+        linux    /vmlinuz-linux
+        initrd   /initramfs-linux.img
+        options  &lt;span style=&#34;color:#00688b&#34;&gt;cryptdevice&lt;/span&gt;=/dev/sda2:main &lt;span style=&#34;color:#00688b&#34;&gt;root&lt;/span&gt;=/dev/mapper/main-root rw &lt;span style=&#34;color:#00688b&#34;&gt;lang&lt;/span&gt;=de &lt;span style=&#34;color:#00688b&#34;&gt;init&lt;/span&gt;=/usr/lib/systemd/systemd &lt;span style=&#34;color:#00688b&#34;&gt;locale&lt;/span&gt;=de_DE.UTF-8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn ein Fallback - Image gewünscht wird dann eine 2 Datei&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        vim /boot/loader/entries/arch-fallback.conf
+            &lt;span style=&#34;color:#228b22&#34;&gt;## mit folgendem Inhalt&lt;/span&gt;
+        title    Arch Linux Fallback
+        linux    /vmlinuz-linux
+        initrd   /initramfs-linux-fallback.img
+        options  &lt;span style=&#34;color:#00688b&#34;&gt;cryptdevice&lt;/span&gt;=/dev/sda2:main &lt;span style=&#34;color:#00688b&#34;&gt;root&lt;/span&gt;=/dev/mapper/main-root rw &lt;span style=&#34;color:#00688b&#34;&gt;lang&lt;/span&gt;=de &lt;span style=&#34;color:#00688b&#34;&gt;init&lt;/span&gt;=/usr/lib/systemd/systemd &lt;span style=&#34;color:#00688b&#34;&gt;locale&lt;/span&gt;=de_DE.UTF-8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ein kleines Menü wird auch noch gebraucht&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        vim /boot/loader/loader.conf
+            &lt;span style=&#34;color:#228b22&#34;&gt;## Mit folgendem Inhalt&lt;/span&gt;
+        timeout &lt;span style=&#34;color:#b452cd&#34;&gt;5&lt;/span&gt;
+        default arch.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;abschliesen-der-grundinstallation&#34;&gt;Abschliesen der Grundinstallation&lt;/h2&gt;
+&lt;p&gt;der Benutzer &lt;em&gt;root&lt;/em&gt; braucht noch ein Passwort&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;danach das System verlassen, die Platten aushängen und neu starten.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        &lt;span style=&#34;color:#658b00&#34;&gt;exit&lt;/span&gt;
+        umount /mnt/{boot,home,}
+        reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Natürlich fehlt jetzt noch einiges, was aber nach dem Neustart alles erledigt werden kann. Dabei hilft am besten das &lt;a href=&#34;https://wiki.archlinux.org/title/General_recommendations&#34;&gt;arch-wiki&lt;/a&gt;&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>libxcrypt und schwache Passwortverschlüsselungen</title>
+        <link>https://cnszde.github.io/blog/posts/libxcrypt/</link>
+        <pubDate>Fri, 18 Jun 2021 22:44:38 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/libxcrypt/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/libxcrypt/ -&lt;p&gt;Ab Version 4.4.21 unterstützt libxcrypt keine scwachen Hashalgorithmen zur Passwortverschlüsselung mehr. Das betrifft die Anmeldung am Betriebssystem. Es kann bei Passwörtern, die noch mit alten Hashes verschlüsselt worden sind, dazu führen, dass man einmalig dazu aufgefordert wird, sein Passwort zu ändern. Displaymanager haben damit so ihre Probleme. Falls man also in Schwierigkeiten beim Anmelden kommt, sollte man sich einmal über ein Terminal anmelden und das Passwort ändern.&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/libxcrypt/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Pi Hole Standalone</title>
+        <link>https://cnszde.github.io/blog/posts/pi-hole/</link>
+        <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/pi-hole/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/pi-hole/ -&lt;p&gt;&lt;strong&gt;Pi-hole&lt;/strong&gt; ist eine Software mit der Funktion eines Tracking- und Werbeblockers.
+Es übernimmt damit die Aufgabe, Domainanfragen der verbundenen Clients aufzulösen und in IP-Adressen umzuwandeln. Auf der Basis von Ausschlusslisten von bekannten Werbe- oder Trackingdomains und benutzerdefinierten Ausschlusslisten werden Anfragen entweder an konfigurierbare andere DNS-Server weitergeleitet oder, falls eine angefragte Domain in einer Ausschlusslisten existieren sollte, eine technisch unbrauchbare IP-Adresse an den Client ausgeliefert (sog. DNS sinkhole). Durch die Übermittlung einer unbrauchbaren IP-Adresse an den Client kann dieser auf die angefragte Domain nicht zugreifen und folglich Werbung und/oder Tracking-Inhalte nicht abrufen.&lt;/p&gt;
+&lt;p&gt;Das ganze gibt es auch als Standalone-Version.
+Unter Arch kann man das mit yay recht einfach installieren&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yay -S pi-hole-standalone
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nach der installation den Systemdienst starten und den DNS auf &lt;em&gt;127.0.0.1&lt;/em&gt; setzen&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl &lt;span style=&#34;color:#658b00&#34;&gt;enable&lt;/span&gt; pihole-FTL.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Entweder man startet das Netzwerk neu, oder gleich den ganzen Rechner&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/pi-hole/ - Christian Schnitz</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Automatische übersetzen von LaTex Quellcode</title>
+        <link>https://cnszde.github.io/blog/posts/latex-quellcode/</link>
+        <pubDate>Tue, 08 Jun 2021 15:54:58 +0200</pubDate>
+        
+        <guid>https://cnszde.github.io/blog/posts/latex-quellcode/</guid>
+        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/latex-quellcode/ -&lt;p&gt;Schreibt man gerade an einem LaTex-Dokument, schaut der Workflow eigentlich immer relativ gleich aus: Tex-Quellcode in einem Texteditor schreiben, nach einer Änderung Quelltext in zum Beispiel PDF übersetzen und das Ergebnis anschließend anschauen. Das häufige hin und her Wechseln zwischen Terminal und den beiden anderen Fenstern kann gerade bei längerem Arbeiten nerven. Eine eigene Entwicklungsumgebung finde ich für LaTex dagegen auch übertrieben.&lt;/p&gt;
+&lt;p&gt;Abhilfe schafft hier das Programm &lt;strong&gt;latexmk&lt;/strong&gt;, was leider die Einschränkung hat das standardmäßig der Adobe Reader benutzt wird. Um das zu ändern einfach folgendes in die .latexmkrc eintragen. Ich nutze mupdf, es funktioniert natürlich auch mit allen anderen PDF-Readern.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;$pdf_previewer = &amp;#34;start mupdf&amp;#34;;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.latexmkrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;latexmk&lt;/strong&gt; wird dann wie folgt aufgerufen:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;latexmk -pdf -pvc dokument.tex
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Das ergibt gerade bei größeren Dokumenten ein besseren Workflow.&lt;/p&gt;
+- https://cnszde.github.io/blog/posts/latex-quellcode/ - Christian Schnitz</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>quellcode on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/tags/quellcode/</link>
+    <description>Recent content in quellcode on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Tue, 08 Jun 2021 15:54:58 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/quellcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automatische übersetzen von LaTex Quellcode</title>
+      <link>https://cnszde.github.io/blog/posts/latex-quellcode/</link>
+      <pubDate>Tue, 08 Jun 2021 15:54:58 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/latex-quellcode/</guid>
+      <description>Schreibt man gerade an einem LaTex-Dokument, schaut der Workflow eigentlich immer relativ gleich aus: Tex-Quellcode in einem Texteditor schreiben, nach einer Änderung Quelltext in zum Beispiel PDF übersetzen und das Ergebnis anschließend anschauen. Das häufige hin und her Wechseln zwischen Terminal und den beiden anderen Fenstern kann gerade bei längerem Arbeiten nerven. Eine eigene Entwicklungsumgebung finde ich für LaTex dagegen auch übertrieben.
+Abhilfe schafft hier das Programm latexmk, was leider die Einschränkung hat das standardmäßig der Adobe Reader benutzt wird.</description>
+    </item>
+    
+  </channel>
+</rss>

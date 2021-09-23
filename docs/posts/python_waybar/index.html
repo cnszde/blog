@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html><head>
+<title>Waybar - benachrichtigen bei neuen Emails</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Waybar - benachrichtigen bei neuen Emails" />
+<meta property="og:description" content="Für meinen Desktop nutze ich Sway zusammen mit der Waybar. Da ich meine Emails mit Mutt lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.
+Das ist relativ leicht mit etwas Python zu realsieren.
+Pyhton muss natürlich installiert sein, zusätzlich wird noch imapclient benötigt:
+pip install imapclient Folgender Code fragt den Mailserver ab:
+$ vim ./config/waybar/mail.py
+#!/usr/bin/env python3 import email import imaplib from imapclient import IMAPClient server = IMAPClient(&#39;MAILSERVER&#39;, use_uid=True) server." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cnszde.github.io/blog/posts/python_waybar/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-11T21:09:46+02:00" />
+<meta property="article:modified_time" content="2021-07-11T21:09:46+02:00" /><meta property="og:site_name" content="Schmierzettel" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Waybar - benachrichtigen bei neuen Emails"/>
+<meta name="twitter:description" content="Für meinen Desktop nutze ich Sway zusammen mit der Waybar. Da ich meine Emails mit Mutt lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.
+Das ist relativ leicht mit etwas Python zu realsieren.
+Pyhton muss natürlich installiert sein, zusätzlich wird noch imapclient benötigt:
+pip install imapclient Folgender Code fragt den Mailserver ab:
+$ vim ./config/waybar/mail.py
+#!/usr/bin/env python3 import email import imaplib from imapclient import IMAPClient server = IMAPClient(&#39;MAILSERVER&#39;, use_uid=True) server."/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/journal.min.3f72a5fc8f5b5dd732a4b476aced0eece2156958d9d414316494ddb10593ddf7.css" integrity="sha256-P3Kl/I9bXdcypLR2rO0O7OIVaVjZ1BQxZJTdsQWT3fc=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/dark-mode.min.c0082f0b082177f6fb3768ff91439a097de49689bd26f4d49f76d94ebb81e02d.css" integrity="sha256-wAgvCwghd/b7N2j/kUOaCX3klom9JvTUn3bZTruB4C0=" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://cnszde.github.io/blog/">
+    
+        <div class="nav-title">
+            Mein Schmierzettel
+        </div>
+        
+        <div class="nav-subtitle">
+            news, diary, whatever
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="">
+                
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/index.xml">
+                RSS Feed
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/categories">
+                Categories
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="">
+                    
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/categories">
+                    Categories
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://cnszde.github.io/blog/">
+            Mein Schmierzettel
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://cnszde.github.io/blog/">
+        <div class="single-column-header-title">Mein Schmierzettel</div>
+        
+        <div class="single-column-header-subtitle">news, diary, whatever</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Waybar - benachrichtigen bei neuen Emails
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            11.07.2021 21:09
+                        </time>
+                        
+
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/blog/tags/arch">arch</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/sway">sway</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/waybar">waybar</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/python">python</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/email">email</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>Für meinen Desktop nutze ich <a href="https://swaywm.org/">Sway</a> zusammen mit der <a href="https://github.com/Alexays/Waybar">Waybar</a>. Da ich meine Emails mit <a href="http://www.mutt.org/">Mutt</a> lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.</p>
+<p>Das ist relativ leicht mit etwas <a href="https://www.python.org/">Python</a> zu realsieren.</p>
+<p>Pyhton muss natürlich installiert sein, zusätzlich wird noch <a href="https://pypi.org/project/IMAPClient/">imapclient</a> benötigt:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    pip install imapclient
+</code></pre></div><p>Folgender Code fragt den Mailserver ab:</p>
+<p><code>$ vim ./config/waybar/mail.py</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#228b22">#!/usr/bin/env python3</span>
+<span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">email</span>
+<span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">imaplib</span>
+<span style="color:#8b008b;font-weight:bold">from</span> <span style="color:#008b45;text-decoration:underline">imapclient</span> <span style="color:#8b008b;font-weight:bold">import</span> IMAPClient
+server = IMAPClient(<span style="color:#cd5555">&#39;MAILSERVER&#39;</span>, use_uid=<span style="color:#8b008b;font-weight:bold">True</span>)
+server.login(<span style="color:#cd5555">&#39;BENUTZERNAME&#39;</span>, <span style="color:#cd5555">&#39;PASSWORD&#39;</span>)
+select_info = server.select_folder(<span style="color:#cd5555">&#39;INBOX&#39;</span>)
+messages = server.search(<span style="color:#cd5555">&#34;UNSEEN&#34;</span>)
+<span style="color:#658b00">print</span> (<span style="color:#cd5555">&#34;</span><span style="color:#cd5555">%d</span><span style="color:#cd5555"> Nachrichten&#34;</span> % <span style="color:#658b00">len</span>(messages))
+<span style="color:#8b008b;font-weight:bold">for</span> msgid, data <span style="color:#8b008b">in</span> server.fetch(messages, [<span style="color:#cd5555">&#39;ENVELOPE&#39;</span>]).items():
+    envelope = data[<span style="color:#cd5555">b</span><span style="color:#cd5555">&#39;ENVELOPE&#39;</span>]
+    <span style="color:#658b00">print</span>(<span style="color:#cd5555">&#39;id #</span><span style="color:#cd5555">%d</span><span style="color:#cd5555">: &#34;</span><span style="color:#cd5555">%s</span><span style="color:#cd5555">&#34; received </span><span style="color:#cd5555">%s</span><span style="color:#cd5555">&#39;</span> % (msgid, envelope.subject.decode(), envelope.date))
+<span style="color:#cd5555">b</span><span style="color:#cd5555">&#39;Logging out&#39;</span>
+</code></pre></div><p>Natürlich müssen bei <strong>MAILSERVER</strong>, <strong>BENUTZERNAME</strong> und <strong>PASSWORD</strong> die eigenen Daten eingetragen werden</p>
+<p>Das Script mit <code>chmod +x mail.py</code> noch ausführbar machen und man kann es direkt mit <code>~/.config/waybar/mail.py</code> testen. Wenn das funktioniert kann man es in die Konfiguration der Waybar einfügen</p>
+<p>In der <code>~/.config/waybar/config</code> fügt man <em>custom/mail</em> in der gewünschten Position hinzu, z.B. so:</p>
+<pre tabindex="0"><code class="language-config" data-lang="config">    [...]
+     &quot;modules-left&quot;: [&quot;sway/workspaces&quot;, &quot;sway/mode&quot;],
+        &quot;modules-center&quot;: [&quot;sway/window&quot;],
+        &quot;modules-right&quot;: [&quot;mpd&quot;, &quot;pulseaudio&quot;, &quot;custom/mail&quot;, &quot;network&quot;, &quot;battery&quot;, &quot;custom/weather&quot;, &quot;clock&quot;, &quot;tray&quot;],
+        &quot;sway/window&quot;: {
+    [...]
+</code></pre><p>In der gleichen Datei muss noch der zugehörige Teil zum Anzeigen, bzw. Abfragen der Mail eingetragen werden:</p>
+<pre tabindex="0"><code class="language-config" data-lang="config">    [...]
+     &quot;custom/mail&quot;: {
+            &quot;format&quot;:{},
+            &quot;interval&quot;: 360,
+            &quot;exec&quot;: &quot;~/.config/waybar/mail.py&quot;,
+            &quot;on-click&quot;: &quot;exec mutt&quot;
+    		},
+    [...] 
+</code></pre><p>Der <em>interval</em> bezieht sich auf Sekunden und fragt das Script alle 5 Minuten ab, ob neue Emails da sind.</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Zuletzt bearbeitet am 11.07.2021</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://cnszde.github.io/blog/posts/arch_install_script/">
+			Nächste<br>Arch Linux installations Script
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://cnszde.github.io/blog/posts/arch_pipewire/">
+			Vorherige<br>Pulseaudio durch Pipewire ersetzen
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>

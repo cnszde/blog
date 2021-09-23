@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/tags/go/</link>
+    <description>Recent content in go on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Tue, 01 Jun 2021 19:08:28 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch - yay Error libalpm.so.12</title>
+      <link>https://cnszde.github.io/blog/posts/arch_aur_yay/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/arch_aur_yay/</guid>
+      <description>Für Pakete aus den aur (archlinux user repository) benutze ich das kleine Programm yay. Dieses begrüßte mich heute mit einem fröhlichem
+error while loading shared libraries: libalpm.so.12 Die Lösung ist aber recht einfach. Das PKG-Build erneut von der Webseite laden und es erneut bauen.
+sudo pacman -R yay git clone https://aur.archlinux.org/yay.git cd yay makepkg -si Danach funktionert das Programm wieder wie gewohnt. Es ist vielleicht nicht die elgeganteste Methode aber in diesem Fall die schnellste.</description>
+    </item>
+    
+  </channel>
+</rss>

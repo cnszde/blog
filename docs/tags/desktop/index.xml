@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>desktop on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/tags/desktop/</link>
+    <description>Recent content in desktop on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Sat, 05 Jun 2021 21:12:15 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tastenkürzel für Sway</title>
+      <link>https://cnszde.github.io/blog/posts/sway/</link>
+      <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/sway/</guid>
+      <description>Ich bin von i3 zu sway gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich wayland nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.
+Action  Mod + Enter Neuer terminal Mod + F Aktuelles Fenster als Vollbild Mod + Shift + Q Programm schliessen Mod + Shift + E Sway verlassen Mod + Shift + C Sway koniguration neu laden Mod + Shift + - Move window to scratchpad Mod + - Show scratchpad  Workspaces keys  Mod + 0.</description>
+    </item>
+    
+  </channel>
+</rss>

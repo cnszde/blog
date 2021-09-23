@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arch on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/categories/arch/</link>
+    <description>Recent content in arch on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Fri, 18 Jun 2021 22:44:38 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/categories/arch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>libxcrypt und schwache Passwortverschlüsselungen</title>
+      <link>https://cnszde.github.io/blog/posts/libxcrypt/</link>
+      <pubDate>Fri, 18 Jun 2021 22:44:38 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/libxcrypt/</guid>
+      <description>Ab Version 4.4.21 unterstützt libxcrypt keine scwachen Hashalgorithmen zur Passwortverschlüsselung mehr. Das betrifft die Anmeldung am Betriebssystem. Es kann bei Passwörtern, die noch mit alten Hashes verschlüsselt worden sind, dazu führen, dass man einmalig dazu aufgefordert wird, sein Passwort zu ändern. Displaymanager haben damit so ihre Probleme. Falls man also in Schwierigkeiten beim Anmelden kommt, sollte man sich einmal über ein Terminal anmelden und das Passwort ändern.</description>
+    </item>
+    
+    <item>
+      <title>Pi Hole Standalone</title>
+      <link>https://cnszde.github.io/blog/posts/pi-hole/</link>
+      <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/pi-hole/</guid>
+      <description>Pi-hole ist eine Software mit der Funktion eines Tracking- und Werbeblockers. Es übernimmt damit die Aufgabe, Domainanfragen der verbundenen Clients aufzulösen und in IP-Adressen umzuwandeln. Auf der Basis von Ausschlusslisten von bekannten Werbe- oder Trackingdomains und benutzerdefinierten Ausschlusslisten werden Anfragen entweder an konfigurierbare andere DNS-Server weitergeleitet oder, falls eine angefragte Domain in einer Ausschlusslisten existieren sollte, eine technisch unbrauchbare IP-Adresse an den Client ausgeliefert (sog. DNS sinkhole). Durch die Übermittlung einer unbrauchbaren IP-Adresse an den Client kann dieser auf die angefragte Domain nicht zugreifen und folglich Werbung und/oder Tracking-Inhalte nicht abrufen.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux - festen DNS eintragen</title>
+      <link>https://cnszde.github.io/blog/posts/dns/</link>
+      <pubDate>Fri, 04 Jun 2021 11:04:20 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/dns/</guid>
+      <description>Bei mir läuft im hintergrund der NetworkManager um mich mit verschiedenen WLAN zu verbinden, alles schön mit DHCP. Was ich allerdings nicht möchte ist, das mir über DHCP auch der DNS zur Verfügung gestellt wird.
+Wenn man nun in der /etc/resolv.conf einen anderen DNS-Server einträgt wird der natürlich wieder vom NetworkManager überschrieben. Natürlich kann man das auch im NetworkManager selbst handhaben, aber als Kind der Konsole gibt es auch einen anderen weg.</description>
+    </item>
+    
+    <item>
+      <title>Arch - yay Error libalpm.so.12</title>
+      <link>https://cnszde.github.io/blog/posts/arch_aur_yay/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/arch_aur_yay/</guid>
+      <description>Für Pakete aus den aur (archlinux user repository) benutze ich das kleine Programm yay. Dieses begrüßte mich heute mit einem fröhlichem
+error while loading shared libraries: libalpm.so.12 Die Lösung ist aber recht einfach. Das PKG-Build erneut von der Webseite laden und es erneut bauen.
+sudo pacman -R yay git clone https://aur.archlinux.org/yay.git cd yay makepkg -si Danach funktionert das Programm wieder wie gewohnt. Es ist vielleicht nicht die elgeganteste Methode aber in diesem Fall die schnellste.</description>
+    </item>
+    
+    <item>
+      <title>Abschied von Freenode auch für Arch</title>
+      <link>https://cnszde.github.io/blog/posts/freenode/</link>
+      <pubDate>Mon, 31 May 2021 18:54:31 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/freenode/</guid>
+      <description>In letzter Zeit hat es einen Streit darüber gegeben, wem das freenode.net-Netzwerk für IRC gehört. der streit hat unter anderem auch dazu geführt, dass viele der Betreuer des Netzwerks dieses verlassen und ein neues gegründet haben: libera.chat.
+Das IRC-Netzwerk wurde von vielen Projekten, darunter auch Arch Linux, als Plattform für Online-Diskussionen und -Support benutzt. Mit dem heutigen Tag wird Arch Linux (und auch befreundete Projekte wie Arch Linux ARM und Arch Linux 32 damit beginnen, die offizielle Infrastruktur für IRC von freenode.</description>
+    </item>
+    
+  </channel>
+</rss>

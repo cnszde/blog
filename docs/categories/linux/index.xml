@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/categories/linux/</link>
+    <description>Recent content in linux on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Sun, 13 Jun 2021 13:41:49 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pi Hole Standalone</title>
+      <link>https://cnszde.github.io/blog/posts/pi-hole/</link>
+      <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/pi-hole/</guid>
+      <description>Pi-hole ist eine Software mit der Funktion eines Tracking- und Werbeblockers. Es übernimmt damit die Aufgabe, Domainanfragen der verbundenen Clients aufzulösen und in IP-Adressen umzuwandeln. Auf der Basis von Ausschlusslisten von bekannten Werbe- oder Trackingdomains und benutzerdefinierten Ausschlusslisten werden Anfragen entweder an konfigurierbare andere DNS-Server weitergeleitet oder, falls eine angefragte Domain in einer Ausschlusslisten existieren sollte, eine technisch unbrauchbare IP-Adresse an den Client ausgeliefert (sog. DNS sinkhole). Durch die Übermittlung einer unbrauchbaren IP-Adresse an den Client kann dieser auf die angefragte Domain nicht zugreifen und folglich Werbung und/oder Tracking-Inhalte nicht abrufen.</description>
+    </item>
+    
+    <item>
+      <title>Automatische übersetzen von LaTex Quellcode</title>
+      <link>https://cnszde.github.io/blog/posts/latex-quellcode/</link>
+      <pubDate>Tue, 08 Jun 2021 15:54:58 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/latex-quellcode/</guid>
+      <description>Schreibt man gerade an einem LaTex-Dokument, schaut der Workflow eigentlich immer relativ gleich aus: Tex-Quellcode in einem Texteditor schreiben, nach einer Änderung Quelltext in zum Beispiel PDF übersetzen und das Ergebnis anschließend anschauen. Das häufige hin und her Wechseln zwischen Terminal und den beiden anderen Fenstern kann gerade bei längerem Arbeiten nerven. Eine eigene Entwicklungsumgebung finde ich für LaTex dagegen auch übertrieben.
+Abhilfe schafft hier das Programm latexmk, was leider die Einschränkung hat das standardmäßig der Adobe Reader benutzt wird.</description>
+    </item>
+    
+    <item>
+      <title>Mutt</title>
+      <link>https://cnszde.github.io/blog/posts/mutt/</link>
+      <pubDate>Tue, 08 Jun 2021 12:28:13 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/mutt/</guid>
+      <description>Um eMails zu Lesen und Schreiben nutze ich, trotz vieler anderen möglichkeiten immer noch Mutt. Für gMail sieht die .muttrc so aus:
+1 set from = &amp;#34;DIE EMAIL ADRESSE&amp;#34; 2 set realname = &amp;#34;DER NAME&amp;#34; 3 set use_from = yes 4 set imap_user = &amp;#34;DIE EMAIL ADRESSE&amp;#34; 5 set imap_pass = &amp;#34;DAS PASSWORT&amp;#34; 6 set folder = &amp;#34;imaps://imap.gmail.com:993&amp;#34; 7 set spoolfile = &amp;#34;+INBOX&amp;#34; 8 set postponed =&amp;#34;+[Gmail]/Entwürfe&amp;#34; 9 set trash = &amp;#34;+[Gmail]/Papierkorb&amp;#34; 10 set record= &amp;#34;+[Gmail]/Gesendet&amp;#34; 11 set smtp_url = &amp;#34;smtp://$imap_user@smtp.</description>
+    </item>
+    
+    <item>
+      <title>Hugo - Script für den loaklen Web-Server</title>
+      <link>https://cnszde.github.io/blog/posts/hugo/</link>
+      <pubDate>Tue, 08 Jun 2021 11:55:32 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/hugo/</guid>
+      <description>Für meinen Gedanken und Notizen nutze ich Hugo, ein schlankes, schnelles Framework um Webseiten zu erstellen, ganz ohne php und co. Allerdings möchte ich nicht immer den Hugo eigenen Webserver starten sondern einen Webserver. In meinem Fall ist das Apache. Natürlich funktioniert das ganze auch mit jedem anderen Webserver, wenn man die Pfade anpasst.
+Im Hauptverzeichnis des Blogs erstellen wir eine Datei vim transfer.sh mit folgendem inhalt:
+1 #!/usr/bin/bash 2 rm -r public/* 3 sudo rm -r /srv/http/* 4 hugo 5 sudo cp -rv public/* /srv/http Das Script sollte eigentlich selbsterklärend sein.</description>
+    </item>
+    
+    <item>
+      <title>Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS</title>
+      <link>https://cnszde.github.io/blog/posts/captive/</link>
+      <pubDate>Mon, 07 Jun 2021 17:08:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/captive/</guid>
+      <description>Ich hatte häufig Probleme mich bei captive portals von öffentlichen WLANs, z.B. in Flughäfen, einzuloggen da ich per /etc/resolv.conf einen eigenen DNS-Server, in meinem Fall dnscrypt, einsetze. Durch das Nutzen eines fest vorgegebenen DNS-Servers, statt der automatischen Nutzung des DNS des WLANs, kommt man nicht auf die Vorschaltseite auf der man sich für das WiFi freischalten kann. Mit folgendem Vorgehen konnte ich aber bei meinen letzten Versuchen in öffentlichen WiFis immer die Vorschaltseite öffnen:</description>
+    </item>
+    
+    <item>
+      <title>Tastenkürzel für Sway</title>
+      <link>https://cnszde.github.io/blog/posts/sway/</link>
+      <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/sway/</guid>
+      <description>Ich bin von i3 zu sway gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich wayland nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.
+Action  Mod + Enter Neuer terminal Mod + F Aktuelles Fenster als Vollbild Mod + Shift + Q Programm schliessen Mod + Shift + E Sway verlassen Mod + Shift + C Sway koniguration neu laden Mod + Shift + - Move window to scratchpad Mod + - Show scratchpad  Workspaces keys  Mod + 0.</description>
+    </item>
+    
+    <item>
+      <title>Acer Ex215-21-48SC</title>
+      <link>https://cnszde.github.io/blog/posts/acer-ex215/</link>
+      <pubDate>Fri, 04 Jun 2021 16:21:40 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/acer-ex215/</guid>
+      <description>Ich habe günstig den o.G. Laptop bekommen, natürlich mit Windows 10. Kompletten technischen Daten kann man sich hier oder hieranschauen.
+Windows 10, Office und Co laufen auf der Kiste, da ich aber lieber ein Archlinux benutzen wollte, eben im Bios Secure Boot ausschalten (Master Password muss vergeben sein) und Booten über USB-Stick (F12) erlauben.
+Vom Stick booten, Tastatur auf Deutsch umstellen und die Wlan Verbindung herstellen. Das alles ist gut im wiki beschrieben.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux - festen DNS eintragen</title>
+      <link>https://cnszde.github.io/blog/posts/dns/</link>
+      <pubDate>Fri, 04 Jun 2021 11:04:20 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/dns/</guid>
+      <description>Bei mir läuft im hintergrund der NetworkManager um mich mit verschiedenen WLAN zu verbinden, alles schön mit DHCP. Was ich allerdings nicht möchte ist, das mir über DHCP auch der DNS zur Verfügung gestellt wird.
+Wenn man nun in der /etc/resolv.conf einen anderen DNS-Server einträgt wird der natürlich wieder vom NetworkManager überschrieben. Natürlich kann man das auch im NetworkManager selbst handhaben, aber als Kind der Konsole gibt es auch einen anderen weg.</description>
+    </item>
+    
+    <item>
+      <title>Arch - yay Error libalpm.so.12</title>
+      <link>https://cnszde.github.io/blog/posts/arch_aur_yay/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/arch_aur_yay/</guid>
+      <description>Für Pakete aus den aur (archlinux user repository) benutze ich das kleine Programm yay. Dieses begrüßte mich heute mit einem fröhlichem
+error while loading shared libraries: libalpm.so.12 Die Lösung ist aber recht einfach. Das PKG-Build erneut von der Webseite laden und es erneut bauen.
+sudo pacman -R yay git clone https://aur.archlinux.org/yay.git cd yay makepkg -si Danach funktionert das Programm wieder wie gewohnt. Es ist vielleicht nicht die elgeganteste Methode aber in diesem Fall die schnellste.</description>
+    </item>
+    
+  </channel>
+</rss>

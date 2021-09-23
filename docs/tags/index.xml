@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Thu, 23 Sep 2021 10:35:08 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rezepte</title>
+      <link>https://cnszde.github.io/blog/tags/rezepte/</link>
+      <pubDate>Thu, 23 Sep 2021 10:35:08 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/rezepte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>screenshots</title>
+      <link>https://cnszde.github.io/blog/tags/screenshots/</link>
+      <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sway</title>
+      <link>https://cnszde.github.io/blog/tags/sway/</link>
+      <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/sway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wayland</title>
+      <link>https://cnszde.github.io/blog/tags/wayland/</link>
+      <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/wayland/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arch</title>
+      <link>https://cnszde.github.io/blog/tags/arch/</link>
+      <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/arch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automatisch</title>
+      <link>https://cnszde.github.io/blog/tags/automatisch/</link>
+      <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/automatisch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://cnszde.github.io/blog/tags/bash/</link>
+      <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>installation</title>
+      <link>https://cnszde.github.io/blog/tags/installation/</link>
+      <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>https://cnszde.github.io/blog/tags/email/</link>
+      <pubDate>Sun, 11 Jul 2021 21:09:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://cnszde.github.io/blog/tags/python/</link>
+      <pubDate>Sun, 11 Jul 2021 21:09:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>waybar</title>
+      <link>https://cnszde.github.io/blog/tags/waybar/</link>
+      <pubDate>Sun, 11 Jul 2021 21:09:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/waybar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pipewire</title>
+      <link>https://cnszde.github.io/blog/tags/pipewire/</link>
+      <pubDate>Fri, 09 Jul 2021 21:09:01 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/pipewire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pulseaudio</title>
+      <link>https://cnszde.github.io/blog/tags/pulseaudio/</link>
+      <pubDate>Fri, 09 Jul 2021 21:09:01 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/pulseaudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crypt</title>
+      <link>https://cnszde.github.io/blog/tags/crypt/</link>
+      <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/crypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cryptsetup</title>
+      <link>https://cnszde.github.io/blog/tags/cryptsetup/</link>
+      <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/cryptsetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uefi</title>
+      <link>https://cnszde.github.io/blog/tags/uefi/</link>
+      <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/uefi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>verschluesselt</title>
+      <link>https://cnszde.github.io/blog/tags/verschluesselt/</link>
+      <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/verschluesselt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>passwörter</title>
+      <link>https://cnszde.github.io/blog/tags/passw%C3%B6rter/</link>
+      <pubDate>Fri, 18 Jun 2021 22:44:38 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/passw%C3%B6rter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>verschlüsselung</title>
+      <link>https://cnszde.github.io/blog/tags/verschl%C3%BCsselung/</link>
+      <pubDate>Fri, 18 Jun 2021 22:44:38 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/verschl%C3%BCsselung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aur</title>
+      <link>https://cnszde.github.io/blog/tags/aur/</link>
+      <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/aur/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pi-hole</title>
+      <link>https://cnszde.github.io/blog/tags/pi-hole/</link>
+      <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/pi-hole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>werbung</title>
+      <link>https://cnszde.github.io/blog/tags/werbung/</link>
+      <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/werbung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>https://cnszde.github.io/blog/tags/latex/</link>
+      <pubDate>Tue, 08 Jun 2021 15:54:58 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quellcode</title>
+      <link>https://cnszde.github.io/blog/tags/quellcode/</link>
+      <pubDate>Tue, 08 Jun 2021 15:54:58 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/quellcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mutt</title>
+      <link>https://cnszde.github.io/blog/tags/mutt/</link>
+      <pubDate>Tue, 08 Jun 2021 12:28:13 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/mutt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>muttrc</title>
+      <link>https://cnszde.github.io/blog/tags/muttrc/</link>
+      <pubDate>Tue, 08 Jun 2021 12:28:13 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/muttrc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apache</title>
+      <link>https://cnszde.github.io/blog/tags/apache/</link>
+      <pubDate>Tue, 08 Jun 2021 11:55:32 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://cnszde.github.io/blog/tags/blog/</link>
+      <pubDate>Tue, 08 Jun 2021 11:55:32 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://cnszde.github.io/blog/tags/hugo/</link>
+      <pubDate>Tue, 08 Jun 2021 11:55:32 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://cnszde.github.io/blog/tags/server/</link>
+      <pubDate>Tue, 08 Jun 2021 11:55:32 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>captive portal</title>
+      <link>https://cnszde.github.io/blog/tags/captive-portal/</link>
+      <pubDate>Mon, 07 Jun 2021 17:08:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/captive-portal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dns</title>
+      <link>https://cnszde.github.io/blog/tags/dns/</link>
+      <pubDate>Mon, 07 Jun 2021 17:08:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WiFi</title>
+      <link>https://cnszde.github.io/blog/tags/wifi/</link>
+      <pubDate>Mon, 07 Jun 2021 17:08:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/wifi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>desktop</title>
+      <link>https://cnszde.github.io/blog/tags/desktop/</link>
+      <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/desktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manager</title>
+      <link>https://cnszde.github.io/blog/tags/manager/</link>
+      <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tiling</title>
+      <link>https://cnszde.github.io/blog/tags/tiling/</link>
+      <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/tiling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hardware</title>
+      <link>https://cnszde.github.io/blog/tags/hardware/</link>
+      <pubDate>Fri, 04 Jun 2021 16:21:40 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laptop</title>
+      <link>https://cnszde.github.io/blog/tags/laptop/</link>
+      <pubDate>Fri, 04 Jun 2021 16:21:40 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/laptop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://cnszde.github.io/blog/tags/linux/</link>
+      <pubDate>Fri, 04 Jun 2021 16:21:40 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://cnszde.github.io/blog/tags/go/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>helper</title>
+      <link>https://cnszde.github.io/blog/tags/helper/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/helper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pacman</title>
+      <link>https://cnszde.github.io/blog/tags/pacman/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/pacman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wrapper</title>
+      <link>https://cnszde.github.io/blog/tags/wrapper/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/wrapper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>messenger</title>
+      <link>https://cnszde.github.io/blog/tags/messenger/</link>
+      <pubDate>Tue, 01 Jun 2021 18:46:55 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/messenger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>signal</title>
+      <link>https://cnszde.github.io/blog/tags/signal/</link>
+      <pubDate>Tue, 01 Jun 2021 18:46:55 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/signal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>threema</title>
+      <link>https://cnszde.github.io/blog/tags/threema/</link>
+      <pubDate>Tue, 01 Jun 2021 18:46:55 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/threema/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freenode</title>
+      <link>https://cnszde.github.io/blog/tags/freenode/</link>
+      <pubDate>Mon, 31 May 2021 18:54:31 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/freenode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>irc</title>
+      <link>https://cnszde.github.io/blog/tags/irc/</link>
+      <pubDate>Mon, 31 May 2021 18:54:31 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/irc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>liberia.chat</title>
+      <link>https://cnszde.github.io/blog/tags/liberia.chat/</link>
+      <pubDate>Mon, 31 May 2021 18:54:31 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/liberia.chat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scene</title>
+      <link>https://cnszde.github.io/blog/tags/scene/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/tags/scene/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

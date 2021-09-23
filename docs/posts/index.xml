@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mein Schmierzettel</title>
+    <link>https://cnszde.github.io/blog/posts/</link>
+    <description>Recent content in Posts on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Christian Schnitz</copyright>
+    <lastBuildDate>Thu, 23 Sep 2021 10:35:08 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Burritos</title>
+      <link>https://cnszde.github.io/blog/posts/burritos/</link>
+      <pubDate>Thu, 23 Sep 2021 10:35:08 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/burritos/</guid>
+      <description>Burrito-Rezept des mexikanischen Klassiker, mit herzhafter Füllung und lecker überbacken. Zutaten für 6 Personen
+Zutaten  2 Zwiebeln 2 rote Chilischoten 1 Tl Kreuzkümmel 1 Tl Koriander 2 El Öl 400g Rinderhackfleisch 1 Knoblauchzehe 3 El Tomatenmark 1 Dose Mais (425 g EW) 1 Dose Kidney-Bohnen (425 g) 1 Dose weiße Bohnen (425 g) 1 Pk. Tomaten (stückig, 500 g EW) Salz Tabascosauce 120 g Chili-Gouda 1 Pk. Weizentortillas (6 Stück)  Zubereitung Zwiebeln würfeln.</description>
+    </item>
+    
+    <item>
+      <title>CryptSetup Passwort ändern</title>
+      <link>https://cnszde.github.io/blog/posts/crypt_password_aendern/</link>
+      <pubDate>Sat, 18 Sep 2021 12:21:48 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/crypt_password_aendern/</guid>
+      <description>Das Ändern des Passworts auf einem LUKS-Laufwerk mit nur einem Passwort ist einfach: Terminal öffnen und folgenden Befehl ausführen, indem der aktuelle Standort des Laufwerks durch &amp;ldquo;sdX&amp;rdquo; ersetzt wird. Dann das bestehende Kennwort eingeben, um ein Neues erstellen zu können.
+sudo cryptsetup luksChangeKey /dev/sdX </description>
+    </item>
+    
+    <item>
+      <title>Screenshots mit Wayland (Sway)</title>
+      <link>https://cnszde.github.io/blog/posts/wayland-screenshots/</link>
+      <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/wayland-screenshots/</guid>
+      <description>Mein Desktop läuft mit Sway unter Wayland. Viele Screenshot-Programme funktionieren allerdings nur unter X11 oder sind mir zu aufgeblasen. Die Lösung für mich liegt in 2 kleinen Programmen, zum einen in grim und zum anderen in slurp.
+Mit einem kleinen Einzeiler, kann man von einem zuvor markierten Bereich einen Screenshot erstellen.
+grim -g &amp;#34;$(slurp)&amp;#34; screenshot.png Etwas komfortabler geht es mit einem Script:
+$ vim shot.sh
+#!/usr/bin/sh grim -g &amp;#34;$(slurp)&amp;#34; ~/Bilder/screenshot_$(date +%d.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux installations Script</title>
+      <link>https://cnszde.github.io/blog/posts/arch_install_script/</link>
+      <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/arch_install_script/</guid>
+      <description>Hier habe ich beschrieben wie man Arch Linux verschlüsselt installiert. Ich habe nun ein kleines Script gebastelt was das ganze automatisiert.
+Das ganze ist nicht wirklich Einsteigerfreundlich, man sollte schon mal eine Archlinux-Installation gemacht haben. Es dient eigentlich nur dazu, das man einiges an Tipparbeit spart.
+Aber vorsicht, wenn das Script gestartet wird, gibt es keinerlei rückfragen
+Herunterladen git clone git@github.com:cnszde/arch_install.git</description>
+    </item>
+    
+    <item>
+      <title>Waybar - benachrichtigen bei neuen Emails</title>
+      <link>https://cnszde.github.io/blog/posts/python_waybar/</link>
+      <pubDate>Sun, 11 Jul 2021 21:09:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/python_waybar/</guid>
+      <description>Für meinen Desktop nutze ich Sway zusammen mit der Waybar. Da ich meine Emails mit Mutt lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.
+Das ist relativ leicht mit etwas Python zu realsieren.
+Pyhton muss natürlich installiert sein, zusätzlich wird noch imapclient benötigt:
+pip install imapclient Folgender Code fragt den Mailserver ab:
+$ vim ./config/waybar/mail.py
+#!/usr/bin/env python3 import email import imaplib from imapclient import IMAPClient server = IMAPClient(&amp;#39;MAILSERVER&amp;#39;, use_uid=True) server.</description>
+    </item>
+    
+    <item>
+      <title>Pulseaudio durch Pipewire ersetzen</title>
+      <link>https://cnszde.github.io/blog/posts/arch_pipewire/</link>
+      <pubDate>Fri, 09 Jul 2021 21:09:01 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/arch_pipewire/</guid>
+      <description>PipeWire, das Low-Level-Multimedia-Framework soll bei Audio und Video das Ruder übernehmen.
+Es soll Aufnahme und Wiedergabe sowohl von Audio als auch von Video mit minimaler Latenz und Unterstützung für PulseAudio-, JACK-, ALSA- und GStreamer-basierte Anwendungen bieten.
+PulseAudio lässt sich unter Arch Linux sehr schnell ersetzen:
+sudo pacman -S pipewire pipewire-pulse Natürlich muss die Abfrage ob PulseAudio entfernet werden soll mit ‘j’ bestätigt werden. Ob PipeWire funktioniert kann mit pactl überprüft werden</description>
+    </item>
+    
+    <item>
+      <title>Verschlüsselte Arch Linux installation</title>
+      <link>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</link>
+      <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</guid>
+      <description>Ich beschreibe hier mein vorgehen Arch verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.
+Ich werde auch nicht das erstellen des USB-Sticks / CD des Iso erklären und auch nicht das herstellen einer Internetverbindung, etwas mitarbeit darf schon sein, es ist also keine Copy und Paste Anleitung.
+Eine gute Anlaufstelle bei Problemen ist natürlich das Wiki von Archlinux.</description>
+    </item>
+    
+    <item>
+      <title>libxcrypt und schwache Passwortverschlüsselungen</title>
+      <link>https://cnszde.github.io/blog/posts/libxcrypt/</link>
+      <pubDate>Fri, 18 Jun 2021 22:44:38 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/libxcrypt/</guid>
+      <description>Ab Version 4.4.21 unterstützt libxcrypt keine scwachen Hashalgorithmen zur Passwortverschlüsselung mehr. Das betrifft die Anmeldung am Betriebssystem. Es kann bei Passwörtern, die noch mit alten Hashes verschlüsselt worden sind, dazu führen, dass man einmalig dazu aufgefordert wird, sein Passwort zu ändern. Displaymanager haben damit so ihre Probleme. Falls man also in Schwierigkeiten beim Anmelden kommt, sollte man sich einmal über ein Terminal anmelden und das Passwort ändern.</description>
+    </item>
+    
+    <item>
+      <title>Pi Hole Standalone</title>
+      <link>https://cnszde.github.io/blog/posts/pi-hole/</link>
+      <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/pi-hole/</guid>
+      <description>Pi-hole ist eine Software mit der Funktion eines Tracking- und Werbeblockers. Es übernimmt damit die Aufgabe, Domainanfragen der verbundenen Clients aufzulösen und in IP-Adressen umzuwandeln. Auf der Basis von Ausschlusslisten von bekannten Werbe- oder Trackingdomains und benutzerdefinierten Ausschlusslisten werden Anfragen entweder an konfigurierbare andere DNS-Server weitergeleitet oder, falls eine angefragte Domain in einer Ausschlusslisten existieren sollte, eine technisch unbrauchbare IP-Adresse an den Client ausgeliefert (sog. DNS sinkhole). Durch die Übermittlung einer unbrauchbaren IP-Adresse an den Client kann dieser auf die angefragte Domain nicht zugreifen und folglich Werbung und/oder Tracking-Inhalte nicht abrufen.</description>
+    </item>
+    
+    <item>
+      <title>Automatische übersetzen von LaTex Quellcode</title>
+      <link>https://cnszde.github.io/blog/posts/latex-quellcode/</link>
+      <pubDate>Tue, 08 Jun 2021 15:54:58 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/latex-quellcode/</guid>
+      <description>Schreibt man gerade an einem LaTex-Dokument, schaut der Workflow eigentlich immer relativ gleich aus: Tex-Quellcode in einem Texteditor schreiben, nach einer Änderung Quelltext in zum Beispiel PDF übersetzen und das Ergebnis anschließend anschauen. Das häufige hin und her Wechseln zwischen Terminal und den beiden anderen Fenstern kann gerade bei längerem Arbeiten nerven. Eine eigene Entwicklungsumgebung finde ich für LaTex dagegen auch übertrieben.
+Abhilfe schafft hier das Programm latexmk, was leider die Einschränkung hat das standardmäßig der Adobe Reader benutzt wird.</description>
+    </item>
+    
+    <item>
+      <title>Mutt</title>
+      <link>https://cnszde.github.io/blog/posts/mutt/</link>
+      <pubDate>Tue, 08 Jun 2021 12:28:13 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/mutt/</guid>
+      <description>Um eMails zu Lesen und Schreiben nutze ich, trotz vieler anderen möglichkeiten immer noch Mutt. Für gMail sieht die .muttrc so aus:
+1 set from = &amp;#34;DIE EMAIL ADRESSE&amp;#34; 2 set realname = &amp;#34;DER NAME&amp;#34; 3 set use_from = yes 4 set imap_user = &amp;#34;DIE EMAIL ADRESSE&amp;#34; 5 set imap_pass = &amp;#34;DAS PASSWORT&amp;#34; 6 set folder = &amp;#34;imaps://imap.gmail.com:993&amp;#34; 7 set spoolfile = &amp;#34;+INBOX&amp;#34; 8 set postponed =&amp;#34;+[Gmail]/Entwürfe&amp;#34; 9 set trash = &amp;#34;+[Gmail]/Papierkorb&amp;#34; 10 set record= &amp;#34;+[Gmail]/Gesendet&amp;#34; 11 set smtp_url = &amp;#34;smtp://$imap_user@smtp.</description>
+    </item>
+    
+    <item>
+      <title>Hugo - Script für den loaklen Web-Server</title>
+      <link>https://cnszde.github.io/blog/posts/hugo/</link>
+      <pubDate>Tue, 08 Jun 2021 11:55:32 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/hugo/</guid>
+      <description>Für meinen Gedanken und Notizen nutze ich Hugo, ein schlankes, schnelles Framework um Webseiten zu erstellen, ganz ohne php und co. Allerdings möchte ich nicht immer den Hugo eigenen Webserver starten sondern einen Webserver. In meinem Fall ist das Apache. Natürlich funktioniert das ganze auch mit jedem anderen Webserver, wenn man die Pfade anpasst.
+Im Hauptverzeichnis des Blogs erstellen wir eine Datei vim transfer.sh mit folgendem inhalt:
+1 #!/usr/bin/bash 2 rm -r public/* 3 sudo rm -r /srv/http/* 4 hugo 5 sudo cp -rv public/* /srv/http Das Script sollte eigentlich selbsterklärend sein.</description>
+    </item>
+    
+    <item>
+      <title>Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS</title>
+      <link>https://cnszde.github.io/blog/posts/captive/</link>
+      <pubDate>Mon, 07 Jun 2021 17:08:46 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/captive/</guid>
+      <description>Ich hatte häufig Probleme mich bei captive portals von öffentlichen WLANs, z.B. in Flughäfen, einzuloggen da ich per /etc/resolv.conf einen eigenen DNS-Server, in meinem Fall dnscrypt, einsetze. Durch das Nutzen eines fest vorgegebenen DNS-Servers, statt der automatischen Nutzung des DNS des WLANs, kommt man nicht auf die Vorschaltseite auf der man sich für das WiFi freischalten kann. Mit folgendem Vorgehen konnte ich aber bei meinen letzten Versuchen in öffentlichen WiFis immer die Vorschaltseite öffnen:</description>
+    </item>
+    
+    <item>
+      <title>Tastenkürzel für Sway</title>
+      <link>https://cnszde.github.io/blog/posts/sway/</link>
+      <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/sway/</guid>
+      <description>Ich bin von i3 zu sway gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich wayland nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.
+Action  Mod + Enter Neuer terminal Mod + F Aktuelles Fenster als Vollbild Mod + Shift + Q Programm schliessen Mod + Shift + E Sway verlassen Mod + Shift + C Sway koniguration neu laden Mod + Shift + - Move window to scratchpad Mod + - Show scratchpad  Workspaces keys  Mod + 0.</description>
+    </item>
+    
+    <item>
+      <title>Acer Ex215-21-48SC</title>
+      <link>https://cnszde.github.io/blog/posts/acer-ex215/</link>
+      <pubDate>Fri, 04 Jun 2021 16:21:40 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/acer-ex215/</guid>
+      <description>Ich habe günstig den o.G. Laptop bekommen, natürlich mit Windows 10. Kompletten technischen Daten kann man sich hier oder hieranschauen.
+Windows 10, Office und Co laufen auf der Kiste, da ich aber lieber ein Archlinux benutzen wollte, eben im Bios Secure Boot ausschalten (Master Password muss vergeben sein) und Booten über USB-Stick (F12) erlauben.
+Vom Stick booten, Tastatur auf Deutsch umstellen und die Wlan Verbindung herstellen. Das alles ist gut im wiki beschrieben.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux - festen DNS eintragen</title>
+      <link>https://cnszde.github.io/blog/posts/dns/</link>
+      <pubDate>Fri, 04 Jun 2021 11:04:20 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/dns/</guid>
+      <description>Bei mir läuft im hintergrund der NetworkManager um mich mit verschiedenen WLAN zu verbinden, alles schön mit DHCP. Was ich allerdings nicht möchte ist, das mir über DHCP auch der DNS zur Verfügung gestellt wird.
+Wenn man nun in der /etc/resolv.conf einen anderen DNS-Server einträgt wird der natürlich wieder vom NetworkManager überschrieben. Natürlich kann man das auch im NetworkManager selbst handhaben, aber als Kind der Konsole gibt es auch einen anderen weg.</description>
+    </item>
+    
+    <item>
+      <title>Arch - yay Error libalpm.so.12</title>
+      <link>https://cnszde.github.io/blog/posts/arch_aur_yay/</link>
+      <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/arch_aur_yay/</guid>
+      <description>Für Pakete aus den aur (archlinux user repository) benutze ich das kleine Programm yay. Dieses begrüßte mich heute mit einem fröhlichem
+error while loading shared libraries: libalpm.so.12 Die Lösung ist aber recht einfach. Das PKG-Build erneut von der Webseite laden und es erneut bauen.
+sudo pacman -R yay git clone https://aur.archlinux.org/yay.git cd yay makepkg -si Danach funktionert das Programm wieder wie gewohnt. Es ist vielleicht nicht die elgeganteste Methode aber in diesem Fall die schnellste.</description>
+    </item>
+    
+    <item>
+      <title>Messenger: Signal hängt Threema ab?</title>
+      <link>https://cnszde.github.io/blog/posts/messenger/</link>
+      <pubDate>Tue, 01 Jun 2021 18:46:55 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/messenger/</guid>
+      <description>Das Feld der Messenger ist momentan so offen wie schon lange nicht mehr. WhatsApp dominiert den Markt, aber verliert momentan stärker an Zuspruch denn je. Die Bewegung scheint zu Signal zu gehen und Threema wird abgehängt.
+WhatsApp-Alternativen gab es schon immer und spätestens seit dem Kauf durch Facebook versuchen Datenschützer die Menschen von Alternativen zu überzeugen. Lange verhallten diese Ruf, doch manchmal nimmt die Entwicklung ungeahnte Wendungen. Die Einführung der neuen Nutzungsbedingungen hat eine bisher ungeahnte Wechselwelle in Gang gesetzt.</description>
+    </item>
+    
+    <item>
+      <title>Abschied von Freenode auch für Arch</title>
+      <link>https://cnszde.github.io/blog/posts/freenode/</link>
+      <pubDate>Mon, 31 May 2021 18:54:31 +0200</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/freenode/</guid>
+      <description>In letzter Zeit hat es einen Streit darüber gegeben, wem das freenode.net-Netzwerk für IRC gehört. der streit hat unter anderem auch dazu geführt, dass viele der Betreuer des Netzwerks dieses verlassen und ein neues gegründet haben: libera.chat.
+Das IRC-Netzwerk wurde von vielen Projekten, darunter auch Arch Linux, als Plattform für Online-Diskussionen und -Support benutzt. Mit dem heutigen Tag wird Arch Linux (und auch befreundete Projekte wie Arch Linux ARM und Arch Linux 32 damit beginnen, die offizielle Infrastruktur für IRC von freenode.</description>
+    </item>
+    
+    <item>
+      <title>Chapter I: The Grand Hall</title>
+      <link>https://cnszde.github.io/blog/posts/chapter-1/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://cnszde.github.io/blog/posts/chapter-1/</guid>
+      <description>Three hundred and forty-eight years, six months, and nineteen days ago to-day, the Parisians awoke to the sound of all the bells in the triple circuit of the city, the university, and the town ringing a full peal.
+The sixth of January, 1482, is not, however, a day of which history has preserved the memory. There was nothing notable in the event which thus set the bells and the bourgeois of Paris in a ferment from early morning.</description>
+    </item>
+    
+  </channel>
+</rss>

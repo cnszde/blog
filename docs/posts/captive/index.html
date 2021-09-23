@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html><head>
+<title>Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS" />
+<meta property="og:description" content="Ich hatte häufig Probleme mich bei captive portals von öffentlichen WLANs, z.B. in Flughäfen, einzuloggen da ich per /etc/resolv.conf einen eigenen DNS-Server, in meinem Fall dnscrypt, einsetze. Durch das Nutzen eines fest vorgegebenen DNS-Servers, statt der automatischen Nutzung des DNS des WLANs, kommt man nicht auf die Vorschaltseite auf der man sich für das WiFi freischalten kann. Mit folgendem Vorgehen konnte ich aber bei meinen letzten Versuchen in öffentlichen WiFis immer die Vorschaltseite öffnen:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cnszde.github.io/blog/posts/captive/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-07T17:08:46+02:00" />
+<meta property="article:modified_time" content="2021-06-07T17:08:46+02:00" /><meta property="og:site_name" content="Schmierzettel" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS"/>
+<meta name="twitter:description" content="Ich hatte häufig Probleme mich bei captive portals von öffentlichen WLANs, z.B. in Flughäfen, einzuloggen da ich per /etc/resolv.conf einen eigenen DNS-Server, in meinem Fall dnscrypt, einsetze. Durch das Nutzen eines fest vorgegebenen DNS-Servers, statt der automatischen Nutzung des DNS des WLANs, kommt man nicht auf die Vorschaltseite auf der man sich für das WiFi freischalten kann. Mit folgendem Vorgehen konnte ich aber bei meinen letzten Versuchen in öffentlichen WiFis immer die Vorschaltseite öffnen:"/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/journal.min.3f72a5fc8f5b5dd732a4b476aced0eece2156958d9d414316494ddb10593ddf7.css" integrity="sha256-P3Kl/I9bXdcypLR2rO0O7OIVaVjZ1BQxZJTdsQWT3fc=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/dark-mode.min.c0082f0b082177f6fb3768ff91439a097de49689bd26f4d49f76d94ebb81e02d.css" integrity="sha256-wAgvCwghd/b7N2j/kUOaCX3klom9JvTUn3bZTruB4C0=" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://cnszde.github.io/blog/">
+    
+        <div class="nav-title">
+            Mein Schmierzettel
+        </div>
+        
+        <div class="nav-subtitle">
+            news, diary, whatever
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="">
+                
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/index.xml">
+                RSS Feed
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/categories">
+                Categories
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="">
+                    
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/categories">
+                    Categories
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://cnszde.github.io/blog/">
+            Mein Schmierzettel
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://cnszde.github.io/blog/">
+        <div class="single-column-header-title">Mein Schmierzettel</div>
+        
+        <div class="single-column-header-subtitle">news, diary, whatever</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            07.06.2021 17:08
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/blog/categories/">[linux]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/blog/tags/dns">dns</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/captive-portal">captive portal</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/wifi">WiFi</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>Ich hatte häufig Probleme mich bei <a href="https://de.wikipedia.org/wiki/Captive_Portal#:~:text=etwa%20unausweichliches%20Portal%20von%20englisch,Zustimmung%20des%20Nutzer%20an%20bestimmte">captive portals</a>  von öffentlichen WLANs, z.B. in Flughäfen, einzuloggen da ich per <em>/etc/resolv.conf</em> einen eigenen DNS-Server, in meinem Fall dnscrypt, einsetze. Durch das Nutzen eines fest vorgegebenen DNS-Servers, statt der automatischen Nutzung des DNS des WLANs, kommt man nicht auf die Vorschaltseite auf der man sich für das WiFi freischalten kann.
+Mit folgendem Vorgehen konnte ich aber bei meinen letzten Versuchen in öffentlichen WiFis immer die Vorschaltseite öffnen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">route -n
+</code></pre></div><p>Kernel IP routing table</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Destination</th>
+<th style="text-align:left">Gateway</th>
+<th style="text-align:left">Genmask</th>
+<th style="text-align:left">Flags</th>
+<th style="text-align:left">Metric</th>
+<th style="text-align:left">Ref</th>
+<th style="text-align:left">Use</th>
+<th style="text-align:left">iface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0.0.0.0</td>
+<td style="text-align:left"><strong>192.168.2.1</strong></td>
+<td style="text-align:left">0.0.0.0</td>
+<td style="text-align:left">UG</td>
+<td style="text-align:left">600</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">wlan0</td>
+</tr>
+<tr>
+<td style="text-align:left">192.168.2.0</td>
+<td style="text-align:left">0.0.0.0</td>
+<td style="text-align:left">255.255.255.0</td>
+<td style="text-align:left">U</td>
+<td style="text-align:left">600</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">wlan0</td>
+</tr>
+</tbody>
+</table>
+<p>In der Zeile startend mit <em>0.0.0.0</em> findet man in der zweiten Spalte die IP des Netzwerkrouters (Gateway), gibt man diese mit vorangestelltem <em>http://</em> in den Browser ein sollte man das captive portal zu sehen bekommen. Bei mir hat das bisher zuverlässig funktioniert.</p>
+<p>In diesem Beispiel müsste der Aufruf wie folgt lauten:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">http://192.168.2.1
+</code></pre></div>
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Zuletzt bearbeitet am 07.06.2021</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://cnszde.github.io/blog/posts/hugo/">
+			Nächste<br>Hugo - Script für den loaklen Web-Server
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://cnszde.github.io/blog/posts/sway/">
+			Vorherige<br>Tastenkürzel für Sway
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>

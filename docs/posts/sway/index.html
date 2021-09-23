@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html><head>
+<title>Tastenkürzel für Sway</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Tastenkürzel für Sway" />
+<meta property="og:description" content="Ich bin von i3 zu sway gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich wayland nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.
+Action  Mod &#43; Enter Neuer terminal Mod &#43; F Aktuelles Fenster als Vollbild Mod &#43; Shift &#43; Q Programm schliessen Mod &#43; Shift &#43; E Sway verlassen Mod &#43; Shift &#43; C Sway koniguration neu laden Mod &#43; Shift &#43; - Move window to scratchpad Mod &#43; - Show scratchpad  Workspaces keys  Mod &#43; 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cnszde.github.io/blog/posts/sway/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-05T21:12:15+02:00" />
+<meta property="article:modified_time" content="2021-06-05T21:12:15+02:00" /><meta property="og:site_name" content="Schmierzettel" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tastenkürzel für Sway"/>
+<meta name="twitter:description" content="Ich bin von i3 zu sway gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich wayland nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.
+Action  Mod &#43; Enter Neuer terminal Mod &#43; F Aktuelles Fenster als Vollbild Mod &#43; Shift &#43; Q Programm schliessen Mod &#43; Shift &#43; E Sway verlassen Mod &#43; Shift &#43; C Sway koniguration neu laden Mod &#43; Shift &#43; - Move window to scratchpad Mod &#43; - Show scratchpad  Workspaces keys  Mod &#43; 0."/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/journal.min.3f72a5fc8f5b5dd732a4b476aced0eece2156958d9d414316494ddb10593ddf7.css" integrity="sha256-P3Kl/I9bXdcypLR2rO0O7OIVaVjZ1BQxZJTdsQWT3fc=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/dark-mode.min.c0082f0b082177f6fb3768ff91439a097de49689bd26f4d49f76d94ebb81e02d.css" integrity="sha256-wAgvCwghd/b7N2j/kUOaCX3klom9JvTUn3bZTruB4C0=" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://cnszde.github.io/blog/">
+    
+        <div class="nav-title">
+            Mein Schmierzettel
+        </div>
+        
+        <div class="nav-subtitle">
+            news, diary, whatever
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="">
+                
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/index.xml">
+                RSS Feed
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/categories">
+                Categories
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- INHALTE -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#action" onclick="onNavClick(`#action-nav`)" id="action-nav">
+									Action
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#workspaces-keys" onclick="onNavClick(`#workspaces-keys-nav`)" id="workspaces-keys-nav">
+									Workspaces keys
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="">
+                    
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/categories">
+                    Categories
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- INHALTE -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#action" onclick="onNavClick(`#action-nav`)" id="action-nav">
+									Action
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#workspaces-keys" onclick="onNavClick(`#workspaces-keys-nav`)" id="workspaces-keys-nav">
+									Workspaces keys
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://cnszde.github.io/blog/">
+            Mein Schmierzettel
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://cnszde.github.io/blog/">
+        <div class="single-column-header-title">Mein Schmierzettel</div>
+        
+        <div class="single-column-header-subtitle">news, diary, whatever</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Tastenkürzel für Sway
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            05.06.2021 21:12
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/blog/categories/">[Linux]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/blog/tags/desktop">desktop</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/manager">manager</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/tiling">tiling</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/sway">sway</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>Ich bin von <a href="https://i3wm.org/">i3</a> zu <a href="https://swaywm.org/">sway</a> gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich <a href="https://wayland.freedesktop.org/">wayland</a>
+nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.</p>
+<h2 id="action">Action</h2>
+<ul>
+<li><strong>Mod + Enter</strong> Neuer terminal</li>
+<li><strong>Mod + F</strong> Aktuelles Fenster als Vollbild</li>
+<li><strong>Mod + Shift + Q</strong> Programm schliessen</li>
+<li><strong>Mod + Shift + E</strong> Sway verlassen</li>
+<li><strong>Mod + Shift + C</strong> Sway koniguration neu laden</li>
+<li><strong>Mod + Shift + -</strong> Move window to scratchpad</li>
+<li><strong>Mod + -</strong> Show scratchpad</li>
+</ul>
+<h2 id="workspaces-keys">Workspaces keys</h2>
+<ul>
+<li><strong>Mod + 0..9</strong> Change current workspace</li>
+<li><strong>Mod + Shift + 0..9</strong> Move current window to designated workspace</li>
+<li><strong>Mod + B</strong> Horizontal layout</li>
+<li><strong>Mod + V</strong> Vertical layout</li>
+<li><strong>Mod + S</strong> Stacking layout</li>
+<li><strong>Mod + E</strong> Toggle split layout</li>
+<li><strong>Mod + W</strong> Tabbed layout</li>
+<li><strong>Mod + A</strong> Focus on parent container</li>
+<li><strong>Mod + Space</strong> Swap focus between tiling and floating</li>
+<li><strong>Mod + Shift + Space</strong> Toggle floating mode</li>
+<li><strong>Mod + Tab</strong> Next workspace</li>
+<li><strong>Mod + Shift + Tab</strong> Previous workspace</li>
+<li><strong>Mod + Left/Right/Up/Down</strong> Move focus of the window</li>
+<li><strong>Mod + Shift + Left/Right/Up/Down</strong> Move the focused window in the workspace</li>
+</ul>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Zuletzt bearbeitet am 05.06.2021</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://cnszde.github.io/blog/posts/captive/">
+			Nächste<br>Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://cnszde.github.io/blog/posts/acer-ex215/">
+			Vorherige<br>Acer Ex215-21-48SC
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>

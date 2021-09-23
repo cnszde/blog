@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html><head>
+<title>Verschlüsselte Arch Linux installation</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="Verschlüsselte Arch Linux installation" />
+<meta property="og:description" content="Ich beschreibe hier mein vorgehen Arch verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.
+Ich werde auch nicht das erstellen des USB-Sticks / CD des Iso erklären und auch nicht das herstellen einer Internetverbindung, etwas mitarbeit darf schon sein, es ist also keine Copy und Paste Anleitung.
+Eine gute Anlaufstelle bei Problemen ist natürlich das Wiki von Archlinux." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-08T20:55:45+02:00" />
+<meta property="article:modified_time" content="2021-07-08T20:55:45+02:00" /><meta property="og:site_name" content="Schmierzettel" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Verschlüsselte Arch Linux installation"/>
+<meta name="twitter:description" content="Ich beschreibe hier mein vorgehen Arch verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.
+Ich werde auch nicht das erstellen des USB-Sticks / CD des Iso erklären und auch nicht das herstellen einer Internetverbindung, etwas mitarbeit darf schon sein, es ist also keine Copy und Paste Anleitung.
+Eine gute Anlaufstelle bei Problemen ist natürlich das Wiki von Archlinux."/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/journal.min.3f72a5fc8f5b5dd732a4b476aced0eece2156958d9d414316494ddb10593ddf7.css" integrity="sha256-P3Kl/I9bXdcypLR2rO0O7OIVaVjZ1BQxZJTdsQWT3fc=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://cnszde.github.io/blog/scss/dark-mode.min.c0082f0b082177f6fb3768ff91439a097de49689bd26f4d49f76d94ebb81e02d.css" integrity="sha256-wAgvCwghd/b7N2j/kUOaCX3klom9JvTUn3bZTruB4C0=" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://cnszde.github.io/blog/">
+    
+        <div class="nav-title">
+            Mein Schmierzettel
+        </div>
+        
+        <div class="nav-subtitle">
+            news, diary, whatever
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="">
+                
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/index.xml">
+                RSS Feed
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/categories">
+                Categories
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- INHALTE -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#partition-erstellen" onclick="onNavClick(`#partition-erstellen-nav`)" id="partition-erstellen-nav">
+									Partition erstellen:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#verschl%c3%bcsselung-einrichten" onclick="onNavClick(`#verschlüsselung-einrichten-nav`)" id="verschlüsselung-einrichten-nav">
+									Verschlüsselung einrichten
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#lvm-einrichten" onclick="onNavClick(`#lvm-einrichten-nav`)" id="lvm-einrichten-nav">
+									LVM einrichten
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#formatieren-und-mounten" onclick="onNavClick(`#formatieren-und-mounten-nav`)" id="formatieren-und-mounten-nav">
+									Formatieren und mounten
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#basissystem-installieren" onclick="onNavClick(`#basissystem-installieren-nav`)" id="basissystem-installieren-nav">
+									Basissystem installieren
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#fstab-erzeugen" onclick="onNavClick(`#fstab-erzeugen-nav`)" id="fstab-erzeugen-nav">
+									fstab erzeugen
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#konfigurieren" onclick="onNavClick(`#konfigurieren-nav`)" id="konfigurieren-nav">
+									Konfigurieren
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#kernel---image-erstellen" onclick="onNavClick(`#kernel---image-erstellen-nav`)" id="kernel---image-erstellen-nav">
+									Kernel - Image erstellen
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#bootloader-installieren" onclick="onNavClick(`#bootloader-installieren-nav`)" id="bootloader-installieren-nav">
+									Bootloader installieren
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#abschliesen-der-grundinstallation" onclick="onNavClick(`#abschliesen-der-grundinstallation-nav`)" id="abschliesen-der-grundinstallation-nav">
+									Abschliesen der Grundinstallation
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="">
+                    
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/categories">
+                    Categories
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- INHALTE -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#partition-erstellen" onclick="onNavClick(`#partition-erstellen-nav`)" id="partition-erstellen-nav">
+									Partition erstellen:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#verschl%c3%bcsselung-einrichten" onclick="onNavClick(`#verschlüsselung-einrichten-nav`)" id="verschlüsselung-einrichten-nav">
+									Verschlüsselung einrichten
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#lvm-einrichten" onclick="onNavClick(`#lvm-einrichten-nav`)" id="lvm-einrichten-nav">
+									LVM einrichten
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#formatieren-und-mounten" onclick="onNavClick(`#formatieren-und-mounten-nav`)" id="formatieren-und-mounten-nav">
+									Formatieren und mounten
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#basissystem-installieren" onclick="onNavClick(`#basissystem-installieren-nav`)" id="basissystem-installieren-nav">
+									Basissystem installieren
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#fstab-erzeugen" onclick="onNavClick(`#fstab-erzeugen-nav`)" id="fstab-erzeugen-nav">
+									fstab erzeugen
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#konfigurieren" onclick="onNavClick(`#konfigurieren-nav`)" id="konfigurieren-nav">
+									Konfigurieren
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#kernel---image-erstellen" onclick="onNavClick(`#kernel---image-erstellen-nav`)" id="kernel---image-erstellen-nav">
+									Kernel - Image erstellen
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#bootloader-installieren" onclick="onNavClick(`#bootloader-installieren-nav`)" id="bootloader-installieren-nav">
+									Bootloader installieren
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#abschliesen-der-grundinstallation" onclick="onNavClick(`#abschliesen-der-grundinstallation-nav`)" id="abschliesen-der-grundinstallation-nav">
+									Abschliesen der Grundinstallation
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://cnszde.github.io/blog/">
+            Mein Schmierzettel
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://cnszde.github.io/blog/">
+        <div class="single-column-header-title">Mein Schmierzettel</div>
+        
+        <div class="single-column-header-subtitle">news, diary, whatever</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Verschlüsselte Arch Linux installation
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            08.07.2021 20:55
+                        </time>
+                        
+
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/blog/tags/arch">arch</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/verschluesselt">verschluesselt</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/crypt">crypt</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/uefi">uefi</a>
+                                &nbsp;
+                            
+                                <a href="/blog/tags/cryptsetup">cryptsetup</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>Ich beschreibe hier <strong>mein</strong> vorgehen <a href="https://archlinux.org">Arch</a> verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.</p>
+<p>Ich werde auch nicht das erstellen des USB-Sticks / CD des <a href="https://archlinux.org/download/">Iso</a> erklären und auch nicht das herstellen einer Internetverbindung, etwas mitarbeit darf schon sein, es ist also <strong>keine</strong> <em>Copy und Paste</em> Anleitung.</p>
+<p>Eine gute Anlaufstelle bei Problemen ist natürlich das <a href="https://wiki.archlinux.org/">Wiki</a> von Archlinux. Dort stehen die gleichen Informationen wie hier, allerdings wesentlich ausführlicher.</p>
+<p>Partitionsschema wird sein (bis auf boot ist das alles natürlich änderbar):</p>
+<ul>
+<li>512 MB boot</li>
+<li>8 GB swap</li>
+<li>40 GB root</li>
+<li>Rest für das home Verzeichniss</li>
+</ul>
+<h2 id="partition-erstellen">Partition erstellen:</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        gdisk /dev/sda
+</code></pre></div><p><strong>Boot - Partition</strong></p>
+<ul>
+<li>Alle Partitionen auf der Festplatte werden gelöscht: „o“</li>
+<li>Neue Partition anlegen: „n“</li>
+<li>Als erste Partition festlegen: „1“</li>
+<li>Ersten Sektor auf 2048 setzen: [ENTER]</li>
+<li>Letzten Sektor setzen / auf 512 MB Partitionsgröße setzen: „+512M“</li>
+<li>„ef00“ als Partitionstyp wählen: „ef00“</li>
+</ul>
+<p><strong>Hauptpartition</strong></p>
+<ul>
+<li>Neue Partition anlegen: „n&quot;</li>
+<li>Als zweite Partition festlegen: „2“</li>
+<li>Ersten Sektor wählen: [ENTER]</li>
+<li>Letzten Sektor wählen: [ENTER]</li>
+<li>Partitionstyp wählen: [ENTER]</li>
+</ul>
+<p>Mit ‘w’ werden die Änderungen geschrieben, was natürlich mit ‘y’ bestätigt werden muss</p>
+<h2 id="verschlüsselung-einrichten">Verschlüsselung einrichten</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        cryptsetup -c aes-xts-plain -y -s <span style="color:#b452cd">512</span> luksFormat /dev/sda2
+</code></pre></div><h2 id="lvm-einrichten">LVM einrichten</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+            <span style="color:#228b22">## Öffnen der virtuellen Partition</span>
+        cryptsetup luksOpen /dev/sda2 lvm
+        
+            <span style="color:#228b22">## LVM aktivieren</span>
+        pvcreate /dev/mapper/lvm
+        
+            <span style="color:#228b22">## Volume Gruppe erstellen</span>
+        vgreate main /dev/mapper/lvm
+        
+            <span style="color:#228b22">## swap Partition erstellen</span>
+        lvcreate -L 8G -n swap main
+        
+            <span style="color:#228b22">## root Partition erstellen</span>
+        lvcreate -L 40G -n root main
+        
+            <span style="color:#228b22">## home bekommt den Rest</span>
+        lvcreate -l 100%FREE -n home main
+        
+            <span style="color:#228b22">## jetzt noch swap erstellen und aktivieren</span>
+        mkswap /dev/mapper/main-swap
+        swapon /dev/mapper/main-swap
+</code></pre></div><h2 id="formatieren-und-mounten">Formatieren und mounten</h2>
+<p>Die Partitionen müssen noch formatiert werden</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">            <span style="color:#228b22">## formatieren</span>
+        mkfs.vfat /dev/sda1 
+        mkfs.ext4 /dev/mapper/main-root
+        mkfs.ext4 /dev/mapper/main-home
+        
+            <span style="color:#228b22">## mounten der root Partition</span>
+        mount /dev/mapper/main-root /mnt
+        
+            <span style="color:#228b22">## Verzeichnisse für boot und home erstellen</span>
+        mkdir /mnt/boot
+        mkdir /mnt/home
+        
+            <span style="color:#228b22">## Den rest einhängen</span>
+        mount /dev/sda1 /mnt/boot
+        mount /dev/mapper/main-home /mnt/home
+    
+</code></pre></div><h2 id="basissystem-installieren">Basissystem installieren</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        pacstrap /mnt/ base base-devel linux linux-firmware networkmanager lvm2 iwd vim
+</code></pre></div><h2 id="fstab-erzeugen">fstab erzeugen</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        genfstab -p /mnt &gt; /mnt/etc/fstab
+</code></pre></div><p>Es sollten 4 einträge in der /mnt/etc/fstab zu sehen sein.</p>
+<h2 id="konfigurieren">Konfigurieren</h2>
+<p>Das kann in das “gechrooted” werden um dort noch so ein paar kleinigkeiten (Tastatur, Sprache, Zeitzone usw. ) einzustellen.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">            <span style="color:#228b22">## chroot ins System</span>
+        arch-chroot /mnt
+        
+            <span style="color:#228b22">## hostname setzen</span>
+        <span style="color:#658b00">echo</span> computer &gt;  /etc/hostname
+        
+            <span style="color:#228b22">## Sprache</span>
+        <span style="color:#658b00">echo</span> <span style="color:#00688b">LANG</span>=de_DE.UTF-8 &gt; /etc/locale.conf
+        
+            <span style="color:#228b22">## Tastaturbelegung</span>
+        <span style="color:#658b00">echo</span> <span style="color:#00688b">KEYMAP</span>=de-latin1 &gt; /etc/vconsole.conf
+        <span style="color:#658b00">echo</span> <span style="color:#00688b">FONT</span>=lat9w-16 &gt;&gt; /etc/vconsole.conf
+        
+            <span style="color:#228b22">## Spracheinstellung (Locale) setzen</span>
+        vim /etc/locale.gen
+                <span style="color:#228b22">## das # am Anfang folgender Zeilen entfernen: </span>
+                    <span style="color:#228b22">#de_DE.UTF-8 UTF-8</span>
+                    <span style="color:#228b22">#de_DE ISO-8859-1</span>
+                    <span style="color:#228b22">#de_DE@euro ISO-8859-15</span>
+                    <span style="color:#228b22">#en_US.UTF-8</span>
+        locale-gen
+        
+            <span style="color:#228b22">## Zeitzone setzen</span>
+        ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+</code></pre></div><h2 id="kernel---image-erstellen">Kernel - Image erstellen</h2>
+<p>Damit das System beim booten alle nötigen Module laden kann, muss die mkinitcpio angepasst werden.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">                <span style="color:#228b22">## In der datei /etc/mkinitcpio.conf folgendes ändern</span>
+        <span style="color:#00688b">MODULES</span>=(ext4)
+        <span style="color:#00688b">HOOKS</span>=(base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)
+                <span style="color:#228b22">## Kernel neu &#34;bauen&#34;</span>
+        mkinitcpio -p linux
+</code></pre></div><h2 id="bootloader-installieren">Bootloader installieren</h2>
+<p>Ich nehme den UEFI - Bootloader von systemd, der ist einfach und unkompliziert.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        bootctl install
+</code></pre></div><p>Die folgenden Datei muss angelegt werden</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        vim /boot/loader/entries/arch.conf
+            <span style="color:#228b22">## mit folgendem Inhalt</span>
+        title    Arch Linux
+        linux    /vmlinuz-linux
+        initrd   /initramfs-linux.img
+        options  <span style="color:#00688b">cryptdevice</span>=/dev/sda2:main <span style="color:#00688b">root</span>=/dev/mapper/main-root rw <span style="color:#00688b">lang</span>=de <span style="color:#00688b">init</span>=/usr/lib/systemd/systemd <span style="color:#00688b">locale</span>=de_DE.UTF-8
+</code></pre></div><p>Wenn ein Fallback - Image gewünscht wird dann eine 2 Datei</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        vim /boot/loader/entries/arch-fallback.conf
+            <span style="color:#228b22">## mit folgendem Inhalt</span>
+        title    Arch Linux Fallback
+        linux    /vmlinuz-linux
+        initrd   /initramfs-linux-fallback.img
+        options  <span style="color:#00688b">cryptdevice</span>=/dev/sda2:main <span style="color:#00688b">root</span>=/dev/mapper/main-root rw <span style="color:#00688b">lang</span>=de <span style="color:#00688b">init</span>=/usr/lib/systemd/systemd <span style="color:#00688b">locale</span>=de_DE.UTF-8
+</code></pre></div><p>Ein kleines Menü wird auch noch gebraucht</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        vim /boot/loader/loader.conf
+            <span style="color:#228b22">## Mit folgendem Inhalt</span>
+        timeout <span style="color:#b452cd">5</span>
+        default arch.conf
+</code></pre></div><h2 id="abschliesen-der-grundinstallation">Abschliesen der Grundinstallation</h2>
+<p>der Benutzer <em>root</em> braucht noch ein Passwort</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        passwd
+</code></pre></div><p>danach das System verlassen, die Platten aushängen und neu starten.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        <span style="color:#658b00">exit</span>
+        umount /mnt/{boot,home,}
+        reboot
+</code></pre></div><p>Natürlich fehlt jetzt noch einiges, was aber nach dem Neustart alles erledigt werden kann. Dabei hilft am besten das <a href="https://wiki.archlinux.org/title/General_recommendations">arch-wiki</a></p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Zuletzt bearbeitet am 08.07.2021</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://cnszde.github.io/blog/posts/arch_pipewire/">
+			Nächste<br>Pulseaudio durch Pipewire ersetzen
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://cnszde.github.io/blog/posts/libxcrypt/">
+			Vorherige<br>libxcrypt und schwache Passwortverschlüsselungen
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> von <a href="https://amazingrise.net">Rise</a>
+<br>
+Adaptiert von <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Christian Schnitz
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>
