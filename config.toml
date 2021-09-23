@@ -1,4 +1,4 @@
-baseURL = "https://blog.cn-sz.eu/"
+baseURL = "https://cnszde.github.io/blog/"
 DefaultContentLanguage = "de" # Theme's display language, supports: en, fr, zh, zh-hant
 languageCode = "de-de"
 title = "Mein Schmierzettel"
