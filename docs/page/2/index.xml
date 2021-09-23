@@ -1,24 +1,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/</link>
+    <link>https://blog.cn-sz.eu/</link>
     <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
     <lastBuildDate>Thu, 23 Sep 2021 10:35:08 +0200</lastBuildDate>
     
-        <atom:link href="https://cnszde.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.cn-sz.eu/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>Mutt</title>
-        <link>https://cnszde.github.io/blog/posts/mutt/</link>
+        <link>https://blog.cn-sz.eu/posts/mutt/</link>
         <pubDate>Tue, 08 Jun 2021 12:28:13 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/mutt/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/mutt/ -&lt;p&gt;Um eMails zu Lesen und Schreiben nutze ich, trotz vieler anderen möglichkeiten immer noch Mutt. Für gMail sieht die .muttrc so aus:&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/mutt/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/mutt/ -&lt;p&gt;Um eMails zu Lesen und Schreiben nutze ich, trotz vieler anderen möglichkeiten immer noch Mutt. Für gMail sieht die .muttrc so aus:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;  &lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;from&lt;/span&gt; = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;DIE EMAIL ADRESSE&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;  &lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;realname&lt;/span&gt; = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;DER NAME&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;  &lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;use_from&lt;/span&gt; = yes
@@ -44,18 +44,18 @@
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;23&lt;/span&gt;  &lt;span style=&#34;color:#228b22&#34;&gt;##Set editor to create new email&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;24&lt;/span&gt;  &lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;editor&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;vim&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Selbstverständlich gibt es noch viel mehr möglichkeiten in der &lt;em&gt;.muttrc&lt;/em&gt; aber um schnell mal nur eben Mails abrufen zu können reicht das.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/mutt/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/mutt/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Hugo - Script für den loaklen Web-Server</title>
-        <link>https://cnszde.github.io/blog/posts/hugo/</link>
+        <link>https://blog.cn-sz.eu/posts/hugo/</link>
         <pubDate>Tue, 08 Jun 2021 11:55:32 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/hugo/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/hugo/ -&lt;p&gt;Für meinen Gedanken und Notizen nutze ich &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, ein schlankes, schnelles Framework um Webseiten zu erstellen, ganz ohne php und co. Allerdings möchte ich nicht immer den &lt;em&gt;Hugo&lt;/em&gt; eigenen Webserver starten sondern einen Webserver. In meinem Fall ist das &lt;a href=&#34;http://httpd.apache.org/&#34;&gt;Apache&lt;/a&gt;. Natürlich funktioniert das ganze auch mit jedem anderen Webserver, wenn man die Pfade anpasst.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/hugo/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/hugo/ -&lt;p&gt;Für meinen Gedanken und Notizen nutze ich &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, ein schlankes, schnelles Framework um Webseiten zu erstellen, ganz ohne php und co. Allerdings möchte ich nicht immer den &lt;em&gt;Hugo&lt;/em&gt; eigenen Webserver starten sondern einen Webserver. In meinem Fall ist das &lt;a href=&#34;http://httpd.apache.org/&#34;&gt;Apache&lt;/a&gt;. Natürlich funktioniert das ganze auch mit jedem anderen Webserver, wenn man die Pfade anpasst.&lt;/p&gt;
 &lt;p&gt;Im Hauptverzeichnis des Blogs erstellen wir eine Datei &lt;strong&gt;vim transfer.sh&lt;/strong&gt; mit folgendem inhalt:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;#!/usr/bin/bash&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;    rm -r public/*
@@ -63,18 +63,18 @@
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;    hugo
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5&lt;/span&gt;    sudo cp -rv public/* /srv/http
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Das Script sollte eigentlich selbsterklärend sein.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/hugo/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/hugo/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Zugriff auf WiFi captive portal bei Nutzung eines eigenen DNS</title>
-        <link>https://cnszde.github.io/blog/posts/captive/</link>
+        <link>https://blog.cn-sz.eu/posts/captive/</link>
         <pubDate>Mon, 07 Jun 2021 17:08:46 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/captive/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/captive/ -&lt;p&gt;Ich hatte häufig Probleme mich bei &lt;a href=&#34;https://de.wikipedia.org/wiki/Captive_Portal#:~:text=etwa%20unausweichliches%20Portal%20von%20englisch,Zustimmung%20des%20Nutzer%20an%20bestimmte&#34;&gt;captive portals&lt;/a&gt;  von öffentlichen WLANs, z.B. in Flughäfen, einzuloggen da ich per &lt;em&gt;/etc/resolv.conf&lt;/em&gt; einen eigenen DNS-Server, in meinem Fall dnscrypt, einsetze. Durch das Nutzen eines fest vorgegebenen DNS-Servers, statt der automatischen Nutzung des DNS des WLANs, kommt man nicht auf die Vorschaltseite auf der man sich für das WiFi freischalten kann.
+        <guid>https://blog.cn-sz.eu/posts/captive/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/captive/ -&lt;p&gt;Ich hatte häufig Probleme mich bei &lt;a href=&#34;https://de.wikipedia.org/wiki/Captive_Portal#:~:text=etwa%20unausweichliches%20Portal%20von%20englisch,Zustimmung%20des%20Nutzer%20an%20bestimmte&#34;&gt;captive portals&lt;/a&gt;  von öffentlichen WLANs, z.B. in Flughäfen, einzuloggen da ich per &lt;em&gt;/etc/resolv.conf&lt;/em&gt; einen eigenen DNS-Server, in meinem Fall dnscrypt, einsetze. Durch das Nutzen eines fest vorgegebenen DNS-Servers, statt der automatischen Nutzung des DNS des WLANs, kommt man nicht auf die Vorschaltseite auf der man sich für das WiFi freischalten kann.
 Mit folgendem Vorgehen konnte ich aber bei meinen letzten Versuchen in öffentlichen WiFis immer die Vorschaltseite öffnen:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;route -n
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kernel IP routing table&lt;/p&gt;
@@ -117,18 +117,18 @@ Mit folgendem Vorgehen konnte ich aber bei meinen letzten Versuchen in öffentli
 &lt;p&gt;In der Zeile startend mit &lt;em&gt;0.0.0.0&lt;/em&gt; findet man in der zweiten Spalte die IP des Netzwerkrouters (Gateway), gibt man diese mit vorangestelltem &lt;em&gt;http://&lt;/em&gt; in den Browser ein sollte man das captive portal zu sehen bekommen. Bei mir hat das bisher zuverlässig funktioniert.&lt;/p&gt;
 &lt;p&gt;In diesem Beispiel müsste der Aufruf wie folgt lauten:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;http://192.168.2.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- https://cnszde.github.io/blog/posts/captive/ - Christian Schnitz</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- https://blog.cn-sz.eu/posts/captive/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Tastenkürzel für Sway</title>
-        <link>https://cnszde.github.io/blog/posts/sway/</link>
+        <link>https://blog.cn-sz.eu/posts/sway/</link>
         <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/sway/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/sway/ -&lt;p&gt;Ich bin von &lt;a href=&#34;https://i3wm.org/&#34;&gt;i3&lt;/a&gt; zu &lt;a href=&#34;https://swaywm.org/&#34;&gt;sway&lt;/a&gt; gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich &lt;a href=&#34;https://wayland.freedesktop.org/&#34;&gt;wayland&lt;/a&gt;
+        <guid>https://blog.cn-sz.eu/posts/sway/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/sway/ -&lt;p&gt;Ich bin von &lt;a href=&#34;https://i3wm.org/&#34;&gt;i3&lt;/a&gt; zu &lt;a href=&#34;https://swaywm.org/&#34;&gt;sway&lt;/a&gt; gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich &lt;a href=&#34;https://wayland.freedesktop.org/&#34;&gt;wayland&lt;/a&gt;
 nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.&lt;/p&gt;
 &lt;h2 id=&#34;action&#34;&gt;Action&lt;/h2&gt;
 &lt;ul&gt;
@@ -157,18 +157,18 @@ nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundl
 &lt;li&gt;&lt;strong&gt;Mod + Left/Right/Up/Down&lt;/strong&gt; Move focus of the window&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Mod + Shift + Left/Right/Up/Down&lt;/strong&gt; Move the focused window in the workspace&lt;/li&gt;
 &lt;/ul&gt;
-- https://cnszde.github.io/blog/posts/sway/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/sway/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Acer Ex215-21-48SC</title>
-        <link>https://cnszde.github.io/blog/posts/acer-ex215/</link>
+        <link>https://blog.cn-sz.eu/posts/acer-ex215/</link>
         <pubDate>Fri, 04 Jun 2021 16:21:40 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/acer-ex215/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/acer-ex215/ -&lt;p&gt;Ich habe günstig den o.G. Laptop bekommen, natürlich mit Windows 10. Kompletten technischen Daten kann man sich &lt;a href=&#34;https://www.notebooksbilliger.de/acer+extensa+15+ex215+21+46sc+634718&#34;&gt;hier&lt;/a&gt; oder &lt;a href=&#34;https://www.amazon.de/Acer-Extensa-EX215-21-46SC-A4-9120e-Windows/dp/B07ZHLW96Z&#34;&gt;hier&lt;/a&gt;anschauen.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/acer-ex215/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/acer-ex215/ -&lt;p&gt;Ich habe günstig den o.G. Laptop bekommen, natürlich mit Windows 10. Kompletten technischen Daten kann man sich &lt;a href=&#34;https://www.notebooksbilliger.de/acer+extensa+15+ex215+21+46sc+634718&#34;&gt;hier&lt;/a&gt; oder &lt;a href=&#34;https://www.amazon.de/Acer-Extensa-EX215-21-46SC-A4-9120e-Windows/dp/B07ZHLW96Z&#34;&gt;hier&lt;/a&gt;anschauen.&lt;/p&gt;
 &lt;p&gt;Windows 10, Office und Co laufen auf der Kiste, da ich aber lieber ein &lt;a href=&#34;https://archlinux.org&#34;&gt;Archlinux&lt;/a&gt; benutzen wollte, eben im Bios Secure Boot ausschalten (Master Password muss vergeben sein) und Booten über USB-Stick (F12) erlauben.&lt;/p&gt;
 &lt;p&gt;Vom Stick booten, Tastatur auf Deutsch umstellen und die Wlan Verbindung herstellen. Das alles ist gut im &lt;a href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;&gt;wiki&lt;/a&gt; beschrieben.&lt;/p&gt;
 &lt;p&gt;Ein freundliches &lt;strong&gt;fdisk -l&lt;/strong&gt; um zu schauen welche Festplatte erkannt wurden, brachte ein kleines &amp;ldquo;ups&amp;rdquo; zum vorschein. Es wurd nur der USB-Stick erkannt, keine Festplatte.
@@ -182,18 +182,18 @@ Der Grund dafür ist, das die Festplatte eine &lt;a href=&#34;https://de.wikiped
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grub-mkconfig -o /boot/grub/grub.cfg
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;und man kann die chroot Umgebung verlassen. Der Laptop startet normal und man kann mit der restlichen Installation fortfahren.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/acer-ex215/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/acer-ex215/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Arch Linux - festen DNS eintragen</title>
-        <link>https://cnszde.github.io/blog/posts/dns/</link>
+        <link>https://blog.cn-sz.eu/posts/dns/</link>
         <pubDate>Fri, 04 Jun 2021 11:04:20 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/dns/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/dns/ -&lt;p&gt;Bei mir läuft im hintergrund der NetworkManager um mich mit verschiedenen WLAN zu verbinden, alles schön mit DHCP. Was ich allerdings nicht möchte ist, das mir über DHCP auch der DNS zur Verfügung gestellt wird.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/dns/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/dns/ -&lt;p&gt;Bei mir läuft im hintergrund der NetworkManager um mich mit verschiedenen WLAN zu verbinden, alles schön mit DHCP. Was ich allerdings nicht möchte ist, das mir über DHCP auch der DNS zur Verfügung gestellt wird.&lt;/p&gt;
 &lt;p&gt;Wenn man nun in der &lt;strong&gt;/etc/resolv.conf&lt;/strong&gt; einen anderen DNS-Server einträgt wird der natürlich wieder vom NetworkManager überschrieben. Natürlich kann man das auch im NetworkManager selbst handhaben, aber als Kind der Konsole gibt es auch einen anderen weg.&lt;/p&gt;
 &lt;p&gt;Zuerst legen wir eine Datei in &lt;strong&gt;/etc/NetworkManager/conf.d/&lt;/strong&gt; mit folgendem inhalt an:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;[main]
@@ -204,18 +204,18 @@ nameserver 8.8.4.4
 &lt;span style=&#34;color:#228b22&#34;&gt;# und einen für IPV6&lt;/span&gt;
 nameserver 2001:4860:4860::8888
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wie immer, gibt es noch zig andere wege das umzusetzen z.B.  mit dem Dienst von &lt;strong&gt;systemd-resolv&lt;/strong&gt;&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/dns/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/dns/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Arch - yay Error libalpm.so.12</title>
-        <link>https://cnszde.github.io/blog/posts/arch_aur_yay/</link>
+        <link>https://blog.cn-sz.eu/posts/arch_aur_yay/</link>
         <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/arch_aur_yay/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/arch_aur_yay/ -&lt;p&gt;Für Pakete aus den aur (archlinux user repository) benutze ich das kleine Programm &lt;a href=&#34;https://aur.archlinux.org/packages/yay/&#34;&gt;yay&lt;/a&gt;.
+        <guid>https://blog.cn-sz.eu/posts/arch_aur_yay/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/arch_aur_yay/ -&lt;p&gt;Für Pakete aus den aur (archlinux user repository) benutze ich das kleine Programm &lt;a href=&#34;https://aur.archlinux.org/packages/yay/&#34;&gt;yay&lt;/a&gt;.
 Dieses begrüßte mich heute mit einem fröhlichem&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;error &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;while&lt;/span&gt; loading shared libraries: libalpm.so.12
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Die Lösung ist aber recht einfach. Das PKG-Build erneut von der Webseite laden und es erneut bauen.&lt;/p&gt;
@@ -224,48 +224,48 @@ git clone https://aur.archlinux.org/yay.git
 &lt;span style=&#34;color:#658b00&#34;&gt;cd&lt;/span&gt; yay
 makepkg -si
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Danach funktionert das Programm wieder wie gewohnt. Es ist vielleicht nicht die elgeganteste Methode aber in diesem Fall die schnellste.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/arch_aur_yay/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/arch_aur_yay/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Messenger: Signal hängt Threema ab?</title>
-        <link>https://cnszde.github.io/blog/posts/messenger/</link>
+        <link>https://blog.cn-sz.eu/posts/messenger/</link>
         <pubDate>Tue, 01 Jun 2021 18:46:55 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/messenger/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/messenger/ -&lt;p&gt;Das Feld der Messenger ist momentan so offen wie schon lange nicht mehr. WhatsApp dominiert den Markt, aber verliert momentan stärker an Zuspruch denn je. Die Bewegung scheint zu Signal zu gehen und Threema wird abgehängt.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/messenger/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/messenger/ -&lt;p&gt;Das Feld der Messenger ist momentan so offen wie schon lange nicht mehr. WhatsApp dominiert den Markt, aber verliert momentan stärker an Zuspruch denn je. Die Bewegung scheint zu Signal zu gehen und Threema wird abgehängt.&lt;/p&gt;
 &lt;p&gt;WhatsApp-Alternativen gab es schon immer und spätestens seit dem Kauf durch Facebook versuchen Datenschützer die Menschen von Alternativen zu überzeugen. Lange verhallten diese Ruf, doch manchmal nimmt die Entwicklung ungeahnte Wendungen. Die Einführung der neuen Nutzungsbedingungen hat eine bisher ungeahnte Wechselwelle in Gang gesetzt. Das Medienecho ging weit über die IT-Welt hinaus und die Auswirkungen waren so stark, dass Facebook zuletzt zurückruderte und auf die Durchsetzung der neuen AGBs verzichten möchte.&lt;/p&gt;
 &lt;p&gt;Für Facebook ist diese Entwicklung sehr gefährlich. Im Gegensatz zu den anderen IT-Giganten hat das Unternehmen einen durchweg schlechten Ruf, hat massiv unter den Fake-News-Debatten der letzten Jahre gelitten und das Kernnetzwerk verliert rasant an Bedeutung. Das schlägt sich nicht so sehr in den Nutzungszahlen wieder, aber die Berichte, dass Facebook nur noch ein Tummelplatz von „Boomern“ und Unternehmen ist, nehmen zu. Würden jetzt noch Instagram und WhatsApp Nutzer verlieren, wäre das eine Katastrophe, die zum Implodieren des Konzerns führen würde.&lt;/p&gt;
 &lt;p&gt;Bei den WhatsApp-Alternativen war ich immer ein großer Befürworter von Threema. Signal und Threema sind beide sehr gute Alternativen, aber bei Threema habe ich die transparente Finanzierung des Unternehmens und der Entwicklung geschätzt und die Möglichkeit, einen Identifikator jenseits der Telefonnummer zu nutzen. Das war mir sogar wichtiger als das Kriterium Open Source, denn trotz der leidigen Debatte um den Servercode hat hier natürlich Signal die Nase vorn. Die Entwicklung von Signal folgt mir aber ein bisschen zu oft den eigenwilligen Entscheidungen von Moxie Marlinspike, z. B. bei der Verfügbarkeit auf F-Droid.&lt;/p&gt;
 &lt;p&gt;Wenn ich mir die Bewegung in den letzten Monaten so ansehe, geht diese allerdings ziemlich eindeutig in Richtung Signal. Ich habe das mal grob überschlagen und 80% meiner Kontakte sind auf WhatsApp, 30% haben Signal und lediglich eine Handvoll Threema. Hier gab es auch überhaupt keinen Zuwachs zwischen Februar und heute, während Signal massiv gewonnen hat und sogar einige Gruppe von WhatsApp nach Signal umgezogen wurden.&lt;/p&gt;
 &lt;p&gt;Die Ursachen sind mir nicht so ganz klar, aber Shitstorms und die Zielrichtung von Massenbewegungen sind ja oft nicht ganz klar. Wir können ja schon froh sein, dass endlich Telegram als das wahrgenommen wird, was es ist: Der noch schlechtere Messenger als WhatsApp.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/messenger/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/messenger/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Abschied von Freenode auch für Arch</title>
-        <link>https://cnszde.github.io/blog/posts/freenode/</link>
+        <link>https://blog.cn-sz.eu/posts/freenode/</link>
         <pubDate>Mon, 31 May 2021 18:54:31 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/freenode/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/freenode/ -&lt;p&gt;In letzter Zeit hat es einen Streit darüber gegeben, wem das &lt;a href=&#34;https://freenode.net/&#34;&gt;freenode.net&lt;/a&gt;-Netzwerk für IRC gehört.  der streit hat unter anderem auch dazu geführt, dass viele der Betreuer des Netzwerks dieses verlassen und ein neues gegründet haben: &lt;a href=&#34;https://libera.chat/&#34;&gt;libera.chat&lt;/a&gt;.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/freenode/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/freenode/ -&lt;p&gt;In letzter Zeit hat es einen Streit darüber gegeben, wem das &lt;a href=&#34;https://freenode.net/&#34;&gt;freenode.net&lt;/a&gt;-Netzwerk für IRC gehört.  der streit hat unter anderem auch dazu geführt, dass viele der Betreuer des Netzwerks dieses verlassen und ein neues gegründet haben: &lt;a href=&#34;https://libera.chat/&#34;&gt;libera.chat&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Das IRC-Netzwerk wurde von vielen Projekten, darunter auch Arch Linux, als Plattform für Online-Diskussionen und -Support benutzt. Mit dem heutigen Tag wird &lt;a href=&#34;https://archlinux.org&#34;&gt;Arch Linux&lt;/a&gt; (und auch befreundete Projekte wie Arch Linux ARM und Arch Linux 32 damit beginnen, die offizielle Infrastruktur für IRC von &lt;a href=&#34;https://freenode.net/&#34;&gt;freenode.net&lt;/a&gt; nach &lt;a href=&#34;https://libera.chat/&#34;&gt;libera.chat&lt;/a&gt; zu migrieren.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/freenode/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/freenode/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Chapter I: The Grand Hall</title>
-        <link>https://cnszde.github.io/blog/posts/chapter-1/</link>
+        <link>https://blog.cn-sz.eu/posts/chapter-1/</link>
         <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/chapter-1/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/chapter-1/ -&lt;p&gt;Three hundred and forty-eight years, six months, and nineteen days ago
+        <guid>https://blog.cn-sz.eu/posts/chapter-1/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/chapter-1/ -&lt;p&gt;Three hundred and forty-eight years, six months, and nineteen days ago
 to-day, the Parisians awoke to the sound of all the bells in the triple
 circuit of the city, the university, and the town ringing a full peal.&lt;/p&gt;
 &lt;p&gt;The sixth of January, 1482, is not, however, a day of which history has
@@ -331,7 +331,7 @@ buffet of an archer, or the horse of one of the provost’s sergeants, which
 kicked to restore order; an admirable tradition which the provostship has
 bequeathed to the constablery, the constablery to the _maréchaussée_,
 the _maréchaussée_ to our _gendarmeri_ of Paris.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/chapter-1/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/chapter-1/ - Christian Schnitz</description>
         </item>
     
     

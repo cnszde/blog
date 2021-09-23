@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>crypt on Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/tags/crypt/</link>
+    <link>https://blog.cn-sz.eu/tags/crypt/</link>
     <description>Recent content in crypt on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
-    <lastBuildDate>Thu, 08 Jul 2021 20:55:45 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/crypt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 20:55:45 +0200</lastBuildDate><atom:link href="https://blog.cn-sz.eu/tags/crypt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Verschlüsselte Arch Linux installation</title>
-      <link>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</link>
+      <link>https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/</link>
       <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</guid>
+      <guid>https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/</guid>
       <description>Ich beschreibe hier mein vorgehen Arch verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.
 Ich werde auch nicht das erstellen des USB-Sticks / CD des Iso erklären und auch nicht das herstellen einer Internetverbindung, etwas mitarbeit darf schon sein, es ist also keine Copy und Paste Anleitung.
 Eine gute Anlaufstelle bei Problemen ist natürlich das Wiki von Archlinux.</description>
@@ -21,10 +21,10 @@ Eine gute Anlaufstelle bei Problemen ist natürlich das Wiki von Archlinux.</des
     
     <item>
       <title>libxcrypt und schwache Passwortverschlüsselungen</title>
-      <link>https://cnszde.github.io/blog/posts/libxcrypt/</link>
+      <link>https://blog.cn-sz.eu/posts/libxcrypt/</link>
       <pubDate>Fri, 18 Jun 2021 22:44:38 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/libxcrypt/</guid>
+      <guid>https://blog.cn-sz.eu/posts/libxcrypt/</guid>
       <description>Ab Version 4.4.21 unterstützt libxcrypt keine scwachen Hashalgorithmen zur Passwortverschlüsselung mehr. Das betrifft die Anmeldung am Betriebssystem. Es kann bei Passwörtern, die noch mit alten Hashes verschlüsselt worden sind, dazu führen, dass man einmalig dazu aufgefordert wird, sein Passwort zu ändern. Displaymanager haben damit so ihre Probleme. Falls man also in Schwierigkeiten beim Anmelden kommt, sollte man sich einmal über ein Terminal anmelden und das Passwort ändern.</description>
     </item>
     

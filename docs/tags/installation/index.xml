@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>installation on Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/tags/installation/</link>
+    <link>https://blog.cn-sz.eu/tags/installation/</link>
     <description>Recent content in installation on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
-    <lastBuildDate>Mon, 12 Jul 2021 22:24:51 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jul 2021 22:24:51 +0200</lastBuildDate><atom:link href="https://blog.cn-sz.eu/tags/installation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux installations Script</title>
-      <link>https://cnszde.github.io/blog/posts/arch_install_script/</link>
+      <link>https://blog.cn-sz.eu/posts/arch_install_script/</link>
       <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/arch_install_script/</guid>
+      <guid>https://blog.cn-sz.eu/posts/arch_install_script/</guid>
       <description>Hier habe ich beschrieben wie man Arch Linux verschlüsselt installiert. Ich habe nun ein kleines Script gebastelt was das ganze automatisiert.
 Das ganze ist nicht wirklich Einsteigerfreundlich, man sollte schon mal eine Archlinux-Installation gemacht haben. Es dient eigentlich nur dazu, das man einiges an Tipparbeit spart.
 Aber vorsicht, wenn das Script gestartet wird, gibt es keinerlei rückfragen
@@ -22,10 +22,10 @@ Herunterladen git clone git@github.com:cnszde/arch_install.git</description>
     
     <item>
       <title>Acer Ex215-21-48SC</title>
-      <link>https://cnszde.github.io/blog/posts/acer-ex215/</link>
+      <link>https://blog.cn-sz.eu/posts/acer-ex215/</link>
       <pubDate>Fri, 04 Jun 2021 16:21:40 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/acer-ex215/</guid>
+      <guid>https://blog.cn-sz.eu/posts/acer-ex215/</guid>
       <description>Ich habe günstig den o.G. Laptop bekommen, natürlich mit Windows 10. Kompletten technischen Daten kann man sich hier oder hieranschauen.
 Windows 10, Office und Co laufen auf der Kiste, da ich aber lieber ein Archlinux benutzen wollte, eben im Bios Secure Boot ausschalten (Master Password muss vergeben sein) und Booten über USB-Stick (F12) erlauben.
 Vom Stick booten, Tastatur auf Deutsch umstellen und die Wlan Verbindung herstellen. Das alles ist gut im wiki beschrieben.</description>

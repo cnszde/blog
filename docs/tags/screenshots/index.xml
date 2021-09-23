@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>screenshots on Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/tags/screenshots/</link>
+    <link>https://blog.cn-sz.eu/tags/screenshots/</link>
     <description>Recent content in screenshots on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
-    <lastBuildDate>Thu, 22 Jul 2021 19:46:41 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/screenshots/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 19:46:41 +0200</lastBuildDate><atom:link href="https://blog.cn-sz.eu/tags/screenshots/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Screenshots mit Wayland (Sway)</title>
-      <link>https://cnszde.github.io/blog/posts/wayland-screenshots/</link>
+      <link>https://blog.cn-sz.eu/posts/wayland-screenshots/</link>
       <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/wayland-screenshots/</guid>
+      <guid>https://blog.cn-sz.eu/posts/wayland-screenshots/</guid>
       <description>Mein Desktop läuft mit Sway unter Wayland. Viele Screenshot-Programme funktionieren allerdings nur unter X11 oder sind mir zu aufgeblasen. Die Lösung für mich liegt in 2 kleinen Programmen, zum einen in grim und zum anderen in slurp.
 Mit einem kleinen Einzeiler, kann man von einem zuvor markierten Bereich einen Screenshot erstellen.
 grim -g &amp;#34;$(slurp)&amp;#34; screenshot.png Etwas komfortabler geht es mit einem Script:

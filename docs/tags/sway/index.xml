@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sway on Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/tags/sway/</link>
+    <link>https://blog.cn-sz.eu/tags/sway/</link>
     <description>Recent content in sway on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
-    <lastBuildDate>Thu, 22 Jul 2021 19:46:41 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/sway/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 19:46:41 +0200</lastBuildDate><atom:link href="https://blog.cn-sz.eu/tags/sway/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Screenshots mit Wayland (Sway)</title>
-      <link>https://cnszde.github.io/blog/posts/wayland-screenshots/</link>
+      <link>https://blog.cn-sz.eu/posts/wayland-screenshots/</link>
       <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/wayland-screenshots/</guid>
+      <guid>https://blog.cn-sz.eu/posts/wayland-screenshots/</guid>
       <description>Mein Desktop läuft mit Sway unter Wayland. Viele Screenshot-Programme funktionieren allerdings nur unter X11 oder sind mir zu aufgeblasen. Die Lösung für mich liegt in 2 kleinen Programmen, zum einen in grim und zum anderen in slurp.
 Mit einem kleinen Einzeiler, kann man von einem zuvor markierten Bereich einen Screenshot erstellen.
 grim -g &amp;#34;$(slurp)&amp;#34; screenshot.png Etwas komfortabler geht es mit einem Script:
@@ -23,10 +23,10 @@ $ vim shot.sh
     
     <item>
       <title>Waybar - benachrichtigen bei neuen Emails</title>
-      <link>https://cnszde.github.io/blog/posts/python_waybar/</link>
+      <link>https://blog.cn-sz.eu/posts/python_waybar/</link>
       <pubDate>Sun, 11 Jul 2021 21:09:46 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/python_waybar/</guid>
+      <guid>https://blog.cn-sz.eu/posts/python_waybar/</guid>
       <description>Für meinen Desktop nutze ich Sway zusammen mit der Waybar. Da ich meine Emails mit Mutt lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.
 Das ist relativ leicht mit etwas Python zu realsieren.
 Pyhton muss natürlich installiert sein, zusätzlich wird noch imapclient benötigt:
@@ -37,10 +37,10 @@ $ vim ./config/waybar/mail.py
     
     <item>
       <title>Tastenkürzel für Sway</title>
-      <link>https://cnszde.github.io/blog/posts/sway/</link>
+      <link>https://blog.cn-sz.eu/posts/sway/</link>
       <pubDate>Sat, 05 Jun 2021 21:12:15 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/sway/</guid>
+      <guid>https://blog.cn-sz.eu/posts/sway/</guid>
       <description>Ich bin von i3 zu sway gewechselt aus einigen gründen. Der Hauptgrund war allerdings der das ich wayland nutzen möchte. Aber darum soll es hier jetzt nicht gehen, sondern um die grundlegenden Tastenkürzel.
 Action  Mod + Enter Neuer terminal Mod + F Aktuelles Fenster als Vollbild Mod + Shift + Q Programm schliessen Mod + Shift + E Sway verlassen Mod + Shift + C Sway koniguration neu laden Mod + Shift + - Move window to scratchpad Mod + - Show scratchpad  Workspaces keys  Mod + 0.</description>
     </item>

@@ -1,24 +1,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/</link>
+    <link>https://blog.cn-sz.eu/</link>
     <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
     <lastBuildDate>Thu, 23 Sep 2021 10:35:08 +0200</lastBuildDate>
     
-        <atom:link href="https://cnszde.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.cn-sz.eu/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>Burritos</title>
-        <link>https://cnszde.github.io/blog/posts/burritos/</link>
+        <link>https://blog.cn-sz.eu/posts/burritos/</link>
         <pubDate>Thu, 23 Sep 2021 10:35:08 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/burritos/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/burritos/ -&lt;p&gt;Burrito-Rezept des mexikanischen Klassiker, mit herzhafter Füllung und lecker überbacken. Zutaten für 6 Personen&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/burritos/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/burritos/ -&lt;p&gt;Burrito-Rezept des mexikanischen Klassiker, mit herzhafter Füllung und lecker überbacken. Zutaten für 6 Personen&lt;/p&gt;
 &lt;h2 id=&#34;zutaten&#34;&gt;Zutaten&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;2 Zwiebeln&lt;/li&gt;
@@ -44,31 +44,31 @@
 &lt;p&gt;Die Hälfte der Hackmasse in die Form geben. Tortillas auf der Arbeitsfläche ausbreiten, je 3 El Hack darauf geben, rundherum einen Rand frei lassen. Tortillas aufrollen und in die Form setzen. Restliches Hack um die Tortillas verteilen. Mit Käse bestreuen und im vorgeheizten Backofen bei 200 Grad auf der 2. Schiene von unten 20 Min. überbacken (Gas 3, Umluft nicht empfehlenswert). Dazu passt saure Sahne oder Guacamole.&lt;/p&gt;
 &lt;h2 id=&#34;tipp&#34;&gt;Tipp&lt;/h2&gt;
 &lt;p&gt;Für die Guacamole Fruchtfleisch von 1 reifen Avocado mit 3 El Limettensaft, 1 Tl abgeriebener Limettenschale, Salz und 200 g saurer Sahne pürieren. 1/2-1 Chilischote längs aufschlitzen, entkernen, fein würfeln und unterrühren.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/burritos/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/burritos/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>CryptSetup Passwort ändern</title>
-        <link>https://cnszde.github.io/blog/posts/crypt_password_aendern/</link>
+        <link>https://blog.cn-sz.eu/posts/crypt_password_aendern/</link>
         <pubDate>Sat, 18 Sep 2021 12:21:48 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/crypt_password_aendern/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/crypt_password_aendern/ -&lt;p&gt;Das Ändern des Passworts auf einem LUKS-Laufwerk mit nur einem Passwort ist einfach: Terminal öffnen und folgenden Befehl ausführen, indem der aktuelle Standort des Laufwerks durch &amp;ldquo;sdX&amp;rdquo; ersetzt wird. Dann das bestehende Kennwort eingeben, um ein Neues erstellen zu können.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/crypt_password_aendern/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/crypt_password_aendern/ -&lt;p&gt;Das Ändern des Passworts auf einem LUKS-Laufwerk mit nur einem Passwort ist einfach: Terminal öffnen und folgenden Befehl ausführen, indem der aktuelle Standort des Laufwerks durch &amp;ldquo;sdX&amp;rdquo; ersetzt wird. Dann das bestehende Kennwort eingeben, um ein Neues erstellen zu können.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo cryptsetup luksChangeKey /dev/sdX
-&lt;/code&gt;&lt;/pre&gt;- https://cnszde.github.io/blog/posts/crypt_password_aendern/ - Christian Schnitz</description>
+&lt;/code&gt;&lt;/pre&gt;- https://blog.cn-sz.eu/posts/crypt_password_aendern/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Screenshots mit Wayland (Sway)</title>
-        <link>https://cnszde.github.io/blog/posts/wayland-screenshots/</link>
+        <link>https://blog.cn-sz.eu/posts/wayland-screenshots/</link>
         <pubDate>Thu, 22 Jul 2021 19:46:41 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/wayland-screenshots/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/wayland-screenshots/ -&lt;p&gt;Mein Desktop läuft mit &lt;a href=&#34;https://swaywm.org/&#34;&gt;Sway&lt;/a&gt; unter &lt;a href=&#34;https://wayland.freedesktop.org/&#34;&gt;Wayland&lt;/a&gt;. Viele Screenshot-Programme funktionieren allerdings nur unter
+        <guid>https://blog.cn-sz.eu/posts/wayland-screenshots/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/wayland-screenshots/ -&lt;p&gt;Mein Desktop läuft mit &lt;a href=&#34;https://swaywm.org/&#34;&gt;Sway&lt;/a&gt; unter &lt;a href=&#34;https://wayland.freedesktop.org/&#34;&gt;Wayland&lt;/a&gt;. Viele Screenshot-Programme funktionieren allerdings nur unter
 &lt;a href=&#34;https://www.x.org/wiki/&#34;&gt;X11&lt;/a&gt; oder sind mir zu  aufgeblasen.
 Die Lösung für mich liegt in 2 kleinen Programmen, zum einen in &lt;a href=&#34;https://github.com/emersion/grim&#34;&gt;grim&lt;/a&gt; und zum anderen in &lt;a href=&#34;https://github.com/emersion/slurp&#34;&gt;slurp&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Mit einem kleinen Einzeiler, kann man von einem zuvor markierten Bereich einen Screenshot erstellen.&lt;/p&gt;
@@ -84,18 +84,18 @@ Die Lösung für mich liegt in 2 kleinen Programmen, zum einen in &lt;a href=&#3
 &lt;p&gt;Man kann es jetzt einfach aus jedem Terminal mit&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$ shot&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;aufrufen&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/wayland-screenshots/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/wayland-screenshots/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Arch Linux installations Script</title>
-        <link>https://cnszde.github.io/blog/posts/arch_install_script/</link>
+        <link>https://blog.cn-sz.eu/posts/arch_install_script/</link>
         <pubDate>Mon, 12 Jul 2021 22:24:51 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/arch_install_script/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/arch_install_script/ -&lt;p&gt;&lt;a href=&#34;https://cnszde.github.io/blog/posts/arch_install_script/&#34;&gt;Hier&lt;/a&gt; habe ich beschrieben wie man &lt;a href=&#34;https://archlinug.org&#34;&gt;Arch Linux&lt;/a&gt;
+        <guid>https://blog.cn-sz.eu/posts/arch_install_script/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/arch_install_script/ -&lt;p&gt;&lt;a href=&#34;https://cnszde.github.io/blog/posts/arch_install_script/&#34;&gt;Hier&lt;/a&gt; habe ich beschrieben wie man &lt;a href=&#34;https://archlinug.org&#34;&gt;Arch Linux&lt;/a&gt;
 verschlüsselt installiert.
 Ich habe nun ein kleines &lt;a href=&#34;https://github.com/cnszde/arch_install&#34;&gt;Script&lt;/a&gt; gebastelt was das ganze automatisiert.&lt;/p&gt;
 &lt;p&gt;Das ganze ist nicht wirklich Einsteigerfreundlich, man sollte schon mal eine Archlinux-Installation gemacht haben.
@@ -103,18 +103,18 @@ Es dient eigentlich nur dazu, das man einiges an Tipparbeit spart.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Aber vorsicht, wenn das Script gestartet wird, gibt es keinerlei rückfragen&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;herunterladen&#34;&gt;Herunterladen&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;git clone git@github.com:cnszde/arch_install.git&lt;/code&gt;&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/arch_install_script/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/arch_install_script/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Waybar - benachrichtigen bei neuen Emails</title>
-        <link>https://cnszde.github.io/blog/posts/python_waybar/</link>
+        <link>https://blog.cn-sz.eu/posts/python_waybar/</link>
         <pubDate>Sun, 11 Jul 2021 21:09:46 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/python_waybar/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/python_waybar/ -&lt;p&gt;Für meinen Desktop nutze ich &lt;a href=&#34;https://swaywm.org/&#34;&gt;Sway&lt;/a&gt; zusammen mit der &lt;a href=&#34;https://github.com/Alexays/Waybar&#34;&gt;Waybar&lt;/a&gt;. Da ich meine Emails mit &lt;a href=&#34;http://www.mutt.org/&#34;&gt;Mutt&lt;/a&gt; lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/python_waybar/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/python_waybar/ -&lt;p&gt;Für meinen Desktop nutze ich &lt;a href=&#34;https://swaywm.org/&#34;&gt;Sway&lt;/a&gt; zusammen mit der &lt;a href=&#34;https://github.com/Alexays/Waybar&#34;&gt;Waybar&lt;/a&gt;. Da ich meine Emails mit &lt;a href=&#34;http://www.mutt.org/&#34;&gt;Mutt&lt;/a&gt; lese und schreibe hätte ich gerne eine Benachrichtung in der Waybar-Leiste.&lt;/p&gt;
 &lt;p&gt;Das ist relativ leicht mit etwas &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt; zu realsieren.&lt;/p&gt;
 &lt;p&gt;Pyhton muss natürlich installiert sein, zusätzlich wird noch &lt;a href=&#34;https://pypi.org/project/IMAPClient/&#34;&gt;imapclient&lt;/a&gt; benötigt:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;    pip install imapclient
@@ -152,18 +152,18 @@ messages = server.search(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;UNSE
     		},
     [...] 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Der &lt;em&gt;interval&lt;/em&gt; bezieht sich auf Sekunden und fragt das Script alle 5 Minuten ab, ob neue Emails da sind.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/python_waybar/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/python_waybar/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Pulseaudio durch Pipewire ersetzen</title>
-        <link>https://cnszde.github.io/blog/posts/arch_pipewire/</link>
+        <link>https://blog.cn-sz.eu/posts/arch_pipewire/</link>
         <pubDate>Fri, 09 Jul 2021 21:09:01 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/arch_pipewire/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/arch_pipewire/ -&lt;p&gt;&lt;a href=&#34;https://pipewire.org/&#34;&gt;PipeWire&lt;/a&gt;, das Low-Level-Multimedia-Framework soll bei Audio und Video das Ruder übernehmen.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/arch_pipewire/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/arch_pipewire/ -&lt;p&gt;&lt;a href=&#34;https://pipewire.org/&#34;&gt;PipeWire&lt;/a&gt;, das Low-Level-Multimedia-Framework soll bei Audio und Video das Ruder übernehmen.&lt;/p&gt;
 &lt;p&gt;Es soll Aufnahme und Wiedergabe sowohl von Audio als auch von Video mit minimaler Latenz und Unterstützung für PulseAudio-, JACK-, ALSA- und GStreamer-basierte Anwendungen bieten.&lt;/p&gt;
 &lt;p&gt;PulseAudio lässt sich unter &lt;a href=&#34;https://archlinux.org&#34;&gt;Arch Linux&lt;/a&gt; sehr schnell ersetzen:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        sudo pacman -S pipewire pipewire-pulse
@@ -186,18 +186,18 @@ messages = server.search(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;UNSE
         Default Source: alsa_input.pci-0000_00_1b.0.analog-stereo
         Cookie: 1966:7e37
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Das war es schon. Natürlich gibt es im &lt;a href=&#34;https://wiki.archlinux.org/title/PipeWire&#34;&gt;Wiki&lt;/a&gt; noch einiges mehr zu PipeWire.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/arch_pipewire/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/arch_pipewire/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Verschlüsselte Arch Linux installation</title>
-        <link>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</link>
+        <link>https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/</link>
         <pubDate>Thu, 08 Jul 2021 20:55:45 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/ -&lt;p&gt;Ich beschreibe hier &lt;strong&gt;mein&lt;/strong&gt; vorgehen &lt;a href=&#34;https://archlinux.org&#34;&gt;Arch&lt;/a&gt; verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/ -&lt;p&gt;Ich beschreibe hier &lt;strong&gt;mein&lt;/strong&gt; vorgehen &lt;a href=&#34;https://archlinux.org&#34;&gt;Arch&lt;/a&gt; verschlüsselt zu installieren. Ich werde auch nur die Grundlegende installation beschreiben. Fenstermanager und Co. lasse ich raus, da hat ja jeder so seine eigenen vorlieben.&lt;/p&gt;
 &lt;p&gt;Ich werde auch nicht das erstellen des USB-Sticks / CD des &lt;a href=&#34;https://archlinux.org/download/&#34;&gt;Iso&lt;/a&gt; erklären und auch nicht das herstellen einer Internetverbindung, etwas mitarbeit darf schon sein, es ist also &lt;strong&gt;keine&lt;/strong&gt; &lt;em&gt;Copy und Paste&lt;/em&gt; Anleitung.&lt;/p&gt;
 &lt;p&gt;Eine gute Anlaufstelle bei Problemen ist natürlich das &lt;a href=&#34;https://wiki.archlinux.org/&#34;&gt;Wiki&lt;/a&gt; von Archlinux. Dort stehen die gleichen Informationen wie hier, allerdings wesentlich ausführlicher.&lt;/p&gt;
 &lt;p&gt;Partitionsschema wird sein (bis auf boot ist das alles natürlich änderbar):&lt;/p&gt;
@@ -338,30 +338,30 @@ messages = server.search(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;UNSE
         umount /mnt/{boot,home,}
         reboot
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Natürlich fehlt jetzt noch einiges, was aber nach dem Neustart alles erledigt werden kann. Dabei hilft am besten das &lt;a href=&#34;https://wiki.archlinux.org/title/General_recommendations&#34;&gt;arch-wiki&lt;/a&gt;&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>libxcrypt und schwache Passwortverschlüsselungen</title>
-        <link>https://cnszde.github.io/blog/posts/libxcrypt/</link>
+        <link>https://blog.cn-sz.eu/posts/libxcrypt/</link>
         <pubDate>Fri, 18 Jun 2021 22:44:38 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/libxcrypt/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/libxcrypt/ -&lt;p&gt;Ab Version 4.4.21 unterstützt libxcrypt keine scwachen Hashalgorithmen zur Passwortverschlüsselung mehr. Das betrifft die Anmeldung am Betriebssystem. Es kann bei Passwörtern, die noch mit alten Hashes verschlüsselt worden sind, dazu führen, dass man einmalig dazu aufgefordert wird, sein Passwort zu ändern. Displaymanager haben damit so ihre Probleme. Falls man also in Schwierigkeiten beim Anmelden kommt, sollte man sich einmal über ein Terminal anmelden und das Passwort ändern.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/libxcrypt/ - Christian Schnitz</description>
+        <guid>https://blog.cn-sz.eu/posts/libxcrypt/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/libxcrypt/ -&lt;p&gt;Ab Version 4.4.21 unterstützt libxcrypt keine scwachen Hashalgorithmen zur Passwortverschlüsselung mehr. Das betrifft die Anmeldung am Betriebssystem. Es kann bei Passwörtern, die noch mit alten Hashes verschlüsselt worden sind, dazu führen, dass man einmalig dazu aufgefordert wird, sein Passwort zu ändern. Displaymanager haben damit so ihre Probleme. Falls man also in Schwierigkeiten beim Anmelden kommt, sollte man sich einmal über ein Terminal anmelden und das Passwort ändern.&lt;/p&gt;
+- https://blog.cn-sz.eu/posts/libxcrypt/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Pi Hole Standalone</title>
-        <link>https://cnszde.github.io/blog/posts/pi-hole/</link>
+        <link>https://blog.cn-sz.eu/posts/pi-hole/</link>
         <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/pi-hole/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/pi-hole/ -&lt;p&gt;&lt;strong&gt;Pi-hole&lt;/strong&gt; ist eine Software mit der Funktion eines Tracking- und Werbeblockers.
+        <guid>https://blog.cn-sz.eu/posts/pi-hole/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/pi-hole/ -&lt;p&gt;&lt;strong&gt;Pi-hole&lt;/strong&gt; ist eine Software mit der Funktion eines Tracking- und Werbeblockers.
 Es übernimmt damit die Aufgabe, Domainanfragen der verbundenen Clients aufzulösen und in IP-Adressen umzuwandeln. Auf der Basis von Ausschlusslisten von bekannten Werbe- oder Trackingdomains und benutzerdefinierten Ausschlusslisten werden Anfragen entweder an konfigurierbare andere DNS-Server weitergeleitet oder, falls eine angefragte Domain in einer Ausschlusslisten existieren sollte, eine technisch unbrauchbare IP-Adresse an den Client ausgeliefert (sog. DNS sinkhole). Durch die Übermittlung einer unbrauchbaren IP-Adresse an den Client kann dieser auf die angefragte Domain nicht zugreifen und folglich Werbung und/oder Tracking-Inhalte nicht abrufen.&lt;/p&gt;
 &lt;p&gt;Das ganze gibt es auch als Standalone-Version.
 Unter Arch kann man das mit yay recht einfach installieren&lt;/p&gt;
@@ -369,24 +369,24 @@ Unter Arch kann man das mit yay recht einfach installieren&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nach der installation den Systemdienst starten und den DNS auf &lt;em&gt;127.0.0.1&lt;/em&gt; setzen&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl &lt;span style=&#34;color:#658b00&#34;&gt;enable&lt;/span&gt; pihole-FTL.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Entweder man startet das Netzwerk neu, oder gleich den ganzen Rechner&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/pi-hole/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/pi-hole/ - Christian Schnitz</description>
         </item>
     
     
     
         <item>
         <title>Automatische übersetzen von LaTex Quellcode</title>
-        <link>https://cnszde.github.io/blog/posts/latex-quellcode/</link>
+        <link>https://blog.cn-sz.eu/posts/latex-quellcode/</link>
         <pubDate>Tue, 08 Jun 2021 15:54:58 +0200</pubDate>
         
-        <guid>https://cnszde.github.io/blog/posts/latex-quellcode/</guid>
-        <description>Mein Schmierzettel https://cnszde.github.io/blog/posts/latex-quellcode/ -&lt;p&gt;Schreibt man gerade an einem LaTex-Dokument, schaut der Workflow eigentlich immer relativ gleich aus: Tex-Quellcode in einem Texteditor schreiben, nach einer Änderung Quelltext in zum Beispiel PDF übersetzen und das Ergebnis anschließend anschauen. Das häufige hin und her Wechseln zwischen Terminal und den beiden anderen Fenstern kann gerade bei längerem Arbeiten nerven. Eine eigene Entwicklungsumgebung finde ich für LaTex dagegen auch übertrieben.&lt;/p&gt;
+        <guid>https://blog.cn-sz.eu/posts/latex-quellcode/</guid>
+        <description>Mein Schmierzettel https://blog.cn-sz.eu/posts/latex-quellcode/ -&lt;p&gt;Schreibt man gerade an einem LaTex-Dokument, schaut der Workflow eigentlich immer relativ gleich aus: Tex-Quellcode in einem Texteditor schreiben, nach einer Änderung Quelltext in zum Beispiel PDF übersetzen und das Ergebnis anschließend anschauen. Das häufige hin und her Wechseln zwischen Terminal und den beiden anderen Fenstern kann gerade bei längerem Arbeiten nerven. Eine eigene Entwicklungsumgebung finde ich für LaTex dagegen auch übertrieben.&lt;/p&gt;
 &lt;p&gt;Abhilfe schafft hier das Programm &lt;strong&gt;latexmk&lt;/strong&gt;, was leider die Einschränkung hat das standardmäßig der Adobe Reader benutzt wird. Um das zu ändern einfach folgendes in die .latexmkrc eintragen. Ich nutze mupdf, es funktioniert natürlich auch mit allen anderen PDF-Readern.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;$pdf_previewer = &amp;#34;start mupdf&amp;#34;;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.latexmkrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;latexmk&lt;/strong&gt; wird dann wie folgt aufgerufen:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;latexmk -pdf -pvc dokument.tex
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Das ergibt gerade bei größeren Dokumenten ein besseren Workflow.&lt;/p&gt;
-- https://cnszde.github.io/blog/posts/latex-quellcode/ - Christian Schnitz</description>
+- https://blog.cn-sz.eu/posts/latex-quellcode/ - Christian Schnitz</description>
         </item>
     
     

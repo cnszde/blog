@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aur on Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/tags/aur/</link>
+    <link>https://blog.cn-sz.eu/tags/aur/</link>
     <description>Recent content in aur on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
-    <lastBuildDate>Sun, 13 Jun 2021 13:41:49 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/aur/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Jun 2021 13:41:49 +0200</lastBuildDate><atom:link href="https://blog.cn-sz.eu/tags/aur/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pi Hole Standalone</title>
-      <link>https://cnszde.github.io/blog/posts/pi-hole/</link>
+      <link>https://blog.cn-sz.eu/posts/pi-hole/</link>
       <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/pi-hole/</guid>
+      <guid>https://blog.cn-sz.eu/posts/pi-hole/</guid>
       <description>Pi-hole ist eine Software mit der Funktion eines Tracking- und Werbeblockers. Es übernimmt damit die Aufgabe, Domainanfragen der verbundenen Clients aufzulösen und in IP-Adressen umzuwandeln. Auf der Basis von Ausschlusslisten von bekannten Werbe- oder Trackingdomains und benutzerdefinierten Ausschlusslisten werden Anfragen entweder an konfigurierbare andere DNS-Server weitergeleitet oder, falls eine angefragte Domain in einer Ausschlusslisten existieren sollte, eine technisch unbrauchbare IP-Adresse an den Client ausgeliefert (sog. DNS sinkhole). Durch die Übermittlung einer unbrauchbaren IP-Adresse an den Client kann dieser auf die angefragte Domain nicht zugreifen und folglich Werbung und/oder Tracking-Inhalte nicht abrufen.</description>
     </item>
     
     <item>
       <title>Arch - yay Error libalpm.so.12</title>
-      <link>https://cnszde.github.io/blog/posts/arch_aur_yay/</link>
+      <link>https://blog.cn-sz.eu/posts/arch_aur_yay/</link>
       <pubDate>Tue, 01 Jun 2021 19:08:28 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/arch_aur_yay/</guid>
+      <guid>https://blog.cn-sz.eu/posts/arch_aur_yay/</guid>
       <description>Für Pakete aus den aur (archlinux user repository) benutze ich das kleine Programm yay. Dieses begrüßte mich heute mit einem fröhlichem
 error while loading shared libraries: libalpm.so.12 Die Lösung ist aber recht einfach. Das PKG-Build erneut von der Webseite laden und es erneut bauen.
 sudo pacman -R yay git clone https://aur.archlinux.org/yay.git cd yay makepkg -si Danach funktionert das Programm wieder wie gewohnt. Es ist vielleicht nicht die elgeganteste Methode aber in diesem Fall die schnellste.</description>

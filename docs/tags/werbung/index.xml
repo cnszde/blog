@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>werbung on Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/tags/werbung/</link>
+    <link>https://blog.cn-sz.eu/tags/werbung/</link>
     <description>Recent content in werbung on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
-    <lastBuildDate>Sun, 13 Jun 2021 13:41:49 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/werbung/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Jun 2021 13:41:49 +0200</lastBuildDate><atom:link href="https://blog.cn-sz.eu/tags/werbung/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pi Hole Standalone</title>
-      <link>https://cnszde.github.io/blog/posts/pi-hole/</link>
+      <link>https://blog.cn-sz.eu/posts/pi-hole/</link>
       <pubDate>Sun, 13 Jun 2021 13:41:49 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/pi-hole/</guid>
+      <guid>https://blog.cn-sz.eu/posts/pi-hole/</guid>
       <description>Pi-hole ist eine Software mit der Funktion eines Tracking- und Werbeblockers. Es übernimmt damit die Aufgabe, Domainanfragen der verbundenen Clients aufzulösen und in IP-Adressen umzuwandeln. Auf der Basis von Ausschlusslisten von bekannten Werbe- oder Trackingdomains und benutzerdefinierten Ausschlusslisten werden Anfragen entweder an konfigurierbare andere DNS-Server weitergeleitet oder, falls eine angefragte Domain in einer Ausschlusslisten existieren sollte, eine technisch unbrauchbare IP-Adresse an den Client ausgeliefert (sog. DNS sinkhole). Durch die Übermittlung einer unbrauchbaren IP-Adresse an den Client kann dieser auf die angefragte Domain nicht zugreifen und folglich Werbung und/oder Tracking-Inhalte nicht abrufen.</description>
     </item>
     

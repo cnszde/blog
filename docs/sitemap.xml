@@ -2,250 +2,250 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cnszde.github.io/blog/posts/burritos/</loc>
+    <loc>https://blog.cn-sz.eu/posts/burritos/</loc>
     <lastmod>2021-09-23T10:35:08+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/</loc>
+    <loc>https://blog.cn-sz.eu/categories/</loc>
     <lastmod>2021-09-23T10:35:08+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/</loc>
+    <loc>https://blog.cn-sz.eu/</loc>
     <lastmod>2021-09-23T10:35:08+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/</loc>
+    <loc>https://blog.cn-sz.eu/posts/</loc>
     <lastmod>2021-09-23T10:35:08+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/rezepte/</loc>
+    <loc>https://blog.cn-sz.eu/tags/rezepte/</loc>
     <lastmod>2021-09-23T10:35:08+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/rezepte/</loc>
+    <loc>https://blog.cn-sz.eu/categories/rezepte/</loc>
     <lastmod>2021-09-23T10:35:08+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/</loc>
+    <loc>https://blog.cn-sz.eu/tags/</loc>
     <lastmod>2021-09-23T10:35:08+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/crypt_password_aendern/</loc>
+    <loc>https://blog.cn-sz.eu/posts/crypt_password_aendern/</loc>
     <lastmod>2021-09-18T12:21:48+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/screenshots/</loc>
+    <loc>https://blog.cn-sz.eu/tags/screenshots/</loc>
     <lastmod>2021-07-22T19:46:41+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/wayland-screenshots/</loc>
+    <loc>https://blog.cn-sz.eu/posts/wayland-screenshots/</loc>
     <lastmod>2021-07-22T19:46:41+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/sway/</loc>
+    <loc>https://blog.cn-sz.eu/tags/sway/</loc>
     <lastmod>2021-07-22T19:46:41+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/wayland/</loc>
+    <loc>https://blog.cn-sz.eu/tags/wayland/</loc>
     <lastmod>2021-07-22T19:46:41+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/arch/</loc>
+    <loc>https://blog.cn-sz.eu/tags/arch/</loc>
     <lastmod>2021-07-12T22:24:51+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/arch_install_script/</loc>
+    <loc>https://blog.cn-sz.eu/posts/arch_install_script/</loc>
     <lastmod>2021-07-12T22:24:51+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/automatisch/</loc>
+    <loc>https://blog.cn-sz.eu/tags/automatisch/</loc>
     <lastmod>2021-07-12T22:24:51+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/bash/</loc>
+    <loc>https://blog.cn-sz.eu/tags/bash/</loc>
     <lastmod>2021-07-12T22:24:51+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/installation/</loc>
+    <loc>https://blog.cn-sz.eu/tags/installation/</loc>
     <lastmod>2021-07-12T22:24:51+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/email/</loc>
+    <loc>https://blog.cn-sz.eu/tags/email/</loc>
     <lastmod>2021-07-11T21:09:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/python/</loc>
+    <loc>https://blog.cn-sz.eu/tags/python/</loc>
     <lastmod>2021-07-11T21:09:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/waybar/</loc>
+    <loc>https://blog.cn-sz.eu/tags/waybar/</loc>
     <lastmod>2021-07-11T21:09:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/python_waybar/</loc>
+    <loc>https://blog.cn-sz.eu/posts/python_waybar/</loc>
     <lastmod>2021-07-11T21:09:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/pipewire/</loc>
+    <loc>https://blog.cn-sz.eu/tags/pipewire/</loc>
     <lastmod>2021-07-09T21:09:01+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/pulseaudio/</loc>
+    <loc>https://blog.cn-sz.eu/tags/pulseaudio/</loc>
     <lastmod>2021-07-09T21:09:01+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/arch_pipewire/</loc>
+    <loc>https://blog.cn-sz.eu/posts/arch_pipewire/</loc>
     <lastmod>2021-07-09T21:09:01+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/crypt/</loc>
+    <loc>https://blog.cn-sz.eu/tags/crypt/</loc>
     <lastmod>2021-07-08T20:55:45+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/cryptsetup/</loc>
+    <loc>https://blog.cn-sz.eu/tags/cryptsetup/</loc>
     <lastmod>2021-07-08T20:55:45+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/uefi/</loc>
+    <loc>https://blog.cn-sz.eu/tags/uefi/</loc>
     <lastmod>2021-07-08T20:55:45+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/verschluesselt/</loc>
+    <loc>https://blog.cn-sz.eu/tags/verschluesselt/</loc>
     <lastmod>2021-07-08T20:55:45+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/verschluesselte_arch_installation/</loc>
+    <loc>https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/</loc>
     <lastmod>2021-07-08T20:55:45+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/arch/</loc>
+    <loc>https://blog.cn-sz.eu/categories/arch/</loc>
     <lastmod>2021-06-18T22:44:38+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/libxcrypt/</loc>
+    <loc>https://blog.cn-sz.eu/posts/libxcrypt/</loc>
     <lastmod>2021-06-18T22:44:38+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/passw%C3%B6rter/</loc>
+    <loc>https://blog.cn-sz.eu/tags/passw%C3%B6rter/</loc>
     <lastmod>2021-06-18T22:44:38+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/verschl%C3%BCsselung/</loc>
+    <loc>https://blog.cn-sz.eu/tags/verschl%C3%BCsselung/</loc>
     <lastmod>2021-06-18T22:44:38+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/aur/</loc>
+    <loc>https://blog.cn-sz.eu/tags/aur/</loc>
     <lastmod>2021-06-13T13:41:49+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/linux/</loc>
+    <loc>https://blog.cn-sz.eu/categories/linux/</loc>
     <lastmod>2021-06-13T13:41:49+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/pi-hole/</loc>
+    <loc>https://blog.cn-sz.eu/posts/pi-hole/</loc>
     <lastmod>2021-06-13T13:41:49+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/pi-hole/</loc>
+    <loc>https://blog.cn-sz.eu/tags/pi-hole/</loc>
     <lastmod>2021-06-13T13:41:49+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/werbung/</loc>
+    <loc>https://blog.cn-sz.eu/tags/werbung/</loc>
     <lastmod>2021-06-13T13:41:49+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/latex-quellcode/</loc>
+    <loc>https://blog.cn-sz.eu/posts/latex-quellcode/</loc>
     <lastmod>2021-06-08T15:54:58+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/latex/</loc>
+    <loc>https://blog.cn-sz.eu/tags/latex/</loc>
     <lastmod>2021-06-08T15:54:58+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/latex/</loc>
+    <loc>https://blog.cn-sz.eu/categories/latex/</loc>
     <lastmod>2021-06-08T15:54:58+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/quellcode/</loc>
+    <loc>https://blog.cn-sz.eu/tags/quellcode/</loc>
     <lastmod>2021-06-08T15:54:58+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/mutt/</loc>
+    <loc>https://blog.cn-sz.eu/posts/mutt/</loc>
     <lastmod>2021-06-08T12:28:13+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/mutt/</loc>
+    <loc>https://blog.cn-sz.eu/tags/mutt/</loc>
     <lastmod>2021-06-08T12:28:13+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/muttrc/</loc>
+    <loc>https://blog.cn-sz.eu/tags/muttrc/</loc>
     <lastmod>2021-06-08T12:28:13+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/apache/</loc>
+    <loc>https://blog.cn-sz.eu/tags/apache/</loc>
     <lastmod>2021-06-08T11:55:32+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/blog/</loc>
+    <loc>https://blog.cn-sz.eu/tags/blog/</loc>
     <lastmod>2021-06-08T11:55:32+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/hugo/</loc>
+    <loc>https://blog.cn-sz.eu/tags/hugo/</loc>
     <lastmod>2021-06-08T11:55:32+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/hugo/</loc>
+    <loc>https://blog.cn-sz.eu/posts/hugo/</loc>
     <lastmod>2021-06-08T11:55:32+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/server/</loc>
+    <loc>https://blog.cn-sz.eu/tags/server/</loc>
     <lastmod>2021-06-08T11:55:32+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/captive-portal/</loc>
+    <loc>https://blog.cn-sz.eu/tags/captive-portal/</loc>
     <lastmod>2021-06-07T17:08:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/dns/</loc>
+    <loc>https://blog.cn-sz.eu/tags/dns/</loc>
     <lastmod>2021-06-07T17:08:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/wifi/</loc>
+    <loc>https://blog.cn-sz.eu/tags/wifi/</loc>
     <lastmod>2021-06-07T17:08:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/captive/</loc>
+    <loc>https://blog.cn-sz.eu/posts/captive/</loc>
     <lastmod>2021-06-07T17:08:46+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/desktop/</loc>
+    <loc>https://blog.cn-sz.eu/tags/desktop/</loc>
     <lastmod>2021-06-05T21:12:15+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/manager/</loc>
+    <loc>https://blog.cn-sz.eu/tags/manager/</loc>
     <lastmod>2021-06-05T21:12:15+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/sway/</loc>
+    <loc>https://blog.cn-sz.eu/posts/sway/</loc>
     <lastmod>2021-06-05T21:12:15+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/tiling/</loc>
+    <loc>https://blog.cn-sz.eu/tags/tiling/</loc>
     <lastmod>2021-06-05T21:12:15+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/acer-ex215/</loc>
+    <loc>https://blog.cn-sz.eu/posts/acer-ex215/</loc>
     <lastmod>2021-06-04T16:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/hardware/</loc>
+    <loc>https://blog.cn-sz.eu/tags/hardware/</loc>
     <lastmod>2021-06-04T16:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/hardware/</loc>
+    <loc>https://blog.cn-sz.eu/categories/hardware/</loc>
     <lastmod>2021-06-04T16:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/laptop/</loc>
+    <loc>https://blog.cn-sz.eu/tags/laptop/</loc>
     <lastmod>2021-06-04T16:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/linux/</loc>
+    <loc>https://blog.cn-sz.eu/tags/linux/</loc>
     <lastmod>2021-06-04T16:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/dns/</loc>
+    <loc>https://blog.cn-sz.eu/posts/dns/</loc>
     <lastmod>2021-06-04T11:04:20+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/arch_aur_yay/</loc>
+    <loc>https://blog.cn-sz.eu/posts/arch_aur_yay/</loc>
     <lastmod>2021-06-01T19:08:28+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/go/</loc>
+    <loc>https://blog.cn-sz.eu/tags/go/</loc>
     <lastmod>2021-06-01T19:08:28+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/helper/</loc>
+    <loc>https://blog.cn-sz.eu/tags/helper/</loc>
     <lastmod>2021-06-01T19:08:28+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/pacman/</loc>
+    <loc>https://blog.cn-sz.eu/tags/pacman/</loc>
     <lastmod>2021-06-01T19:08:28+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/wrapper/</loc>
+    <loc>https://blog.cn-sz.eu/tags/wrapper/</loc>
     <lastmod>2021-06-01T19:08:28+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/messenger/</loc>
+    <loc>https://blog.cn-sz.eu/categories/messenger/</loc>
     <lastmod>2021-06-01T18:46:55+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/messenger/</loc>
+    <loc>https://blog.cn-sz.eu/tags/messenger/</loc>
     <lastmod>2021-06-01T18:46:55+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/messenger/</loc>
+    <loc>https://blog.cn-sz.eu/posts/messenger/</loc>
     <lastmod>2021-06-01T18:46:55+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/signal/</loc>
+    <loc>https://blog.cn-sz.eu/tags/signal/</loc>
     <lastmod>2021-06-01T18:46:55+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/threema/</loc>
+    <loc>https://blog.cn-sz.eu/tags/threema/</loc>
     <lastmod>2021-06-01T18:46:55+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/freenode/</loc>
+    <loc>https://blog.cn-sz.eu/posts/freenode/</loc>
     <lastmod>2021-05-31T18:54:31+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/freenode/</loc>
+    <loc>https://blog.cn-sz.eu/tags/freenode/</loc>
     <lastmod>2021-05-31T18:54:31+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/irc/</loc>
+    <loc>https://blog.cn-sz.eu/tags/irc/</loc>
     <lastmod>2021-05-31T18:54:31+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/irc/</loc>
+    <loc>https://blog.cn-sz.eu/categories/irc/</loc>
     <lastmod>2021-05-31T18:54:31+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/liberia.chat/</loc>
+    <loc>https://blog.cn-sz.eu/tags/liberia.chat/</loc>
     <lastmod>2021-05-31T18:54:31+02:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/posts/chapter-1/</loc>
+    <loc>https://blog.cn-sz.eu/posts/chapter-1/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/tags/scene/</loc>
+    <loc>https://blog.cn-sz.eu/tags/scene/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
   </url><url>
-    <loc>https://cnszde.github.io/blog/categories/story/</loc>
+    <loc>https://blog.cn-sz.eu/categories/story/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
   </url>
 </urlset>

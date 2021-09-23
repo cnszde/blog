@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>freenode on Mein Schmierzettel</title>
-    <link>https://cnszde.github.io/blog/tags/freenode/</link>
+    <link>https://blog.cn-sz.eu/tags/freenode/</link>
     <description>Recent content in freenode on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Christian Schnitz</copyright>
-    <lastBuildDate>Mon, 31 May 2021 18:54:31 +0200</lastBuildDate><atom:link href="https://cnszde.github.io/blog/tags/freenode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 May 2021 18:54:31 +0200</lastBuildDate><atom:link href="https://blog.cn-sz.eu/tags/freenode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abschied von Freenode auch für Arch</title>
-      <link>https://cnszde.github.io/blog/posts/freenode/</link>
+      <link>https://blog.cn-sz.eu/posts/freenode/</link>
       <pubDate>Mon, 31 May 2021 18:54:31 +0200</pubDate>
       
-      <guid>https://cnszde.github.io/blog/posts/freenode/</guid>
+      <guid>https://blog.cn-sz.eu/posts/freenode/</guid>
       <description>In letzter Zeit hat es einen Streit darüber gegeben, wem das freenode.net-Netzwerk für IRC gehört. der streit hat unter anderem auch dazu geführt, dass viele der Betreuer des Netzwerks dieses verlassen und ein neues gegründet haben: libera.chat.
 Das IRC-Netzwerk wurde von vielen Projekten, darunter auch Arch Linux, als Plattform für Online-Diskussionen und -Support benutzt. Mit dem heutigen Tag wird Arch Linux (und auch befreundete Projekte wie Arch Linux ARM und Arch Linux 32 damit beginnen, die offizielle Infrastruktur für IRC von freenode.</description>
     </item>
