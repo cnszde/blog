@@ -7,7 +7,7 @@ featured_image: "/images/burritos.jpg"
 # images is optional, but needed for showing Twitter Card
 images: [/images/burritos.jpg]
 categories: Rezepte
-comment: false
+comment: true
 draft: false
 ---
 Burrito-Rezept des mexikanischen Klassiker, mit herzhafter Füllung und lecker überbacken. Zutaten für 6 Personen
