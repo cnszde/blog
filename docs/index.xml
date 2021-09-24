@@ -207,8 +207,8 @@ messages = server.search(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;UNSE
 &lt;li&gt;40 GB root&lt;/li&gt;
 &lt;li&gt;Rest für das home Verzeichniss&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;partition-erstellen&#34;&gt;Partition erstellen:&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        gdisk /dev/sda
+&lt;h2 id=&#34;partition-erstellen&#34;&gt;Partition erstellen&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gdisk /dev/sda
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Boot - Partition&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Alle Partitionen auf der Festplatte werden gelöscht: „o“&lt;/li&gt;
@@ -228,116 +228,115 @@ messages = server.search(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;UNSE
 &lt;/ul&gt;
 &lt;p&gt;Mit ‘w’ werden die Änderungen geschrieben, was natürlich mit ‘y’ bestätigt werden muss&lt;/p&gt;
 &lt;h2 id=&#34;verschlüsselung-einrichten&#34;&gt;Verschlüsselung einrichten&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        cryptsetup -c aes-xts-plain -y -s &lt;span style=&#34;color:#b452cd&#34;&gt;512&lt;/span&gt; luksFormat /dev/sda2
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cryptsetup -c aes-xts-plain64 -y -s &lt;span style=&#34;color:#b452cd&#34;&gt;512&lt;/span&gt; luksFormat /dev/sda2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;lvm-einrichten&#34;&gt;LVM einrichten&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Öffnen der virtuellen Partition&lt;/span&gt;
-        cryptsetup luksOpen /dev/sda2 lvm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#228b22&#34;&gt;## Öffnen der virtuellen Partition&lt;/span&gt;
+cryptsetup luksOpen /dev/sda2 lvm
+
+&lt;span style=&#34;color:#228b22&#34;&gt;## LVM aktivieren&lt;/span&gt;
+pvcreate /dev/mapper/lvm
+
+&lt;span style=&#34;color:#228b22&#34;&gt;## Volume Gruppe erstellen&lt;/span&gt;
+vgreate main /dev/mapper/lvm
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## LVM aktivieren&lt;/span&gt;
-        pvcreate /dev/mapper/lvm
+&lt;span style=&#34;color:#228b22&#34;&gt;## swap Partition erstellen&lt;/span&gt;
+lvcreate -L 8G -n swap main
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Volume Gruppe erstellen&lt;/span&gt;
-        vgreate main /dev/mapper/lvm
+&lt;span style=&#34;color:#228b22&#34;&gt;## root Partition erstellen&lt;/span&gt;
+lvcreate -L 40G -n root main
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## swap Partition erstellen&lt;/span&gt;
-        lvcreate -L 8G -n swap main
+&lt;span style=&#34;color:#228b22&#34;&gt;## home bekommt den Rest&lt;/span&gt;
+lvcreate -l 100%FREE -n home main
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## root Partition erstellen&lt;/span&gt;
-        lvcreate -L 40G -n root main
-        
-            &lt;span style=&#34;color:#228b22&#34;&gt;## home bekommt den Rest&lt;/span&gt;
-        lvcreate -l 100%FREE -n home main
-        
-            &lt;span style=&#34;color:#228b22&#34;&gt;## jetzt noch swap erstellen und aktivieren&lt;/span&gt;
-        mkswap /dev/mapper/main-swap
-        swapon /dev/mapper/main-swap
+&lt;span style=&#34;color:#228b22&#34;&gt;## jetzt noch swap erstellen und aktivieren&lt;/span&gt;
+mkswap /dev/mapper/main-swap
+swapon /dev/mapper/main-swap
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;formatieren-und-mounten&#34;&gt;Formatieren und mounten&lt;/h2&gt;
 &lt;p&gt;Die Partitionen müssen noch formatiert werden&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;            &lt;span style=&#34;color:#228b22&#34;&gt;## formatieren&lt;/span&gt;
-        mkfs.vfat /dev/sda1 
-        mkfs.ext4 /dev/mapper/main-root
-        mkfs.ext4 /dev/mapper/main-home
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#228b22&#34;&gt;## formatieren&lt;/span&gt;
+mkfs.vfat /dev/sda1 
+mkfs.ext4 /dev/mapper/main-root
+mkfs.ext4 /dev/mapper/main-home
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## mounten der root Partition&lt;/span&gt;
-        mount /dev/mapper/main-root /mnt
+&lt;span style=&#34;color:#228b22&#34;&gt;## mounten der root Partition&lt;/span&gt;
+mount /dev/mapper/main-root /mnt
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Verzeichnisse für boot und home erstellen&lt;/span&gt;
-        mkdir /mnt/boot
-        mkdir /mnt/home
+&lt;span style=&#34;color:#228b22&#34;&gt;## Verzeichnisse für boot und home erstellen&lt;/span&gt;
+mkdir /mnt/boot
+mkdir /mnt/home
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Den rest einhängen&lt;/span&gt;
-        mount /dev/sda1 /mnt/boot
-        mount /dev/mapper/main-home /mnt/home
-    
+&lt;span style=&#34;color:#228b22&#34;&gt;## Den rest einhängen&lt;/span&gt;
+mount /dev/sda1 /mnt/boot
+mount /dev/mapper/main-home /mnt/home
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;basissystem-installieren&#34;&gt;Basissystem installieren&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        pacstrap /mnt/ base base-devel linux linux-firmware networkmanager lvm2 iwd vim
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacstrap /mnt/ base base-devel linux linux-firmware networkmanager lvm2 iwd vim
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;fstab-erzeugen&#34;&gt;fstab erzeugen&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        genfstab -p /mnt &amp;gt; /mnt/etc/fstab
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;genfstab -p /mnt &amp;gt; /mnt/etc/fstab
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Es sollten 4 einträge in der /mnt/etc/fstab zu sehen sein.&lt;/p&gt;
 &lt;h2 id=&#34;konfigurieren&#34;&gt;Konfigurieren&lt;/h2&gt;
-&lt;p&gt;Das kann in das “gechrooted” werden um dort noch so ein paar kleinigkeiten (Tastatur, Sprache, Zeitzone usw. ) einzustellen.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;            &lt;span style=&#34;color:#228b22&#34;&gt;## chroot ins System&lt;/span&gt;
-        arch-chroot /mnt
+&lt;p&gt;Dann kann in das “gechrooted” werden um dort noch so ein paar kleinigkeiten (Tastatur, Sprache, Zeitzone usw. ) einzustellen.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#228b22&#34;&gt;## chroot ins System&lt;/span&gt;
+arch-chroot /mnt
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## hostname setzen&lt;/span&gt;
-        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; computer &amp;gt;  /etc/hostname
+&lt;span style=&#34;color:#228b22&#34;&gt;## hostname setzen&lt;/span&gt;
+&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; computer &amp;gt;  /etc/hostname
+
+&lt;span style=&#34;color:#228b22&#34;&gt;## Sprache&lt;/span&gt;
+&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;LANG&lt;/span&gt;=de_DE.UTF-8 &amp;gt; /etc/locale.conf
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Sprache&lt;/span&gt;
-        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;LANG&lt;/span&gt;=de_DE.UTF-8 &amp;gt; /etc/locale.conf
+&lt;span style=&#34;color:#228b22&#34;&gt;## Tastaturbelegung&lt;/span&gt;
+&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;KEYMAP&lt;/span&gt;=de-latin1 &amp;gt; /etc/vconsole.conf
+&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;FONT&lt;/span&gt;=lat9w-16 &amp;gt;&amp;gt; /etc/vconsole.conf
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Tastaturbelegung&lt;/span&gt;
-        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;KEYMAP&lt;/span&gt;=de-latin1 &amp;gt; /etc/vconsole.conf
-        &lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;FONT&lt;/span&gt;=lat9w-16 &amp;gt;&amp;gt; /etc/vconsole.conf
+&lt;span style=&#34;color:#228b22&#34;&gt;## Spracheinstellung (Locale) setzen&lt;/span&gt;
+vim /etc/locale.gen
+&lt;span style=&#34;color:#228b22&#34;&gt;## das # am Anfang folgender Zeilen entfernen: &lt;/span&gt;
+    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE.UTF-8 UTF-8&lt;/span&gt;
+    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE ISO-8859-1&lt;/span&gt;
+    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE@euro ISO-8859-15&lt;/span&gt;
+    &lt;span style=&#34;color:#228b22&#34;&gt;#en_US.UTF-8&lt;/span&gt;
+locale-gen
         
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Spracheinstellung (Locale) setzen&lt;/span&gt;
-        vim /etc/locale.gen
-                &lt;span style=&#34;color:#228b22&#34;&gt;## das # am Anfang folgender Zeilen entfernen: &lt;/span&gt;
-                    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE.UTF-8 UTF-8&lt;/span&gt;
-                    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE ISO-8859-1&lt;/span&gt;
-                    &lt;span style=&#34;color:#228b22&#34;&gt;#de_DE@euro ISO-8859-15&lt;/span&gt;
-                    &lt;span style=&#34;color:#228b22&#34;&gt;#en_US.UTF-8&lt;/span&gt;
-        locale-gen
-        
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Zeitzone setzen&lt;/span&gt;
-        ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+&lt;span style=&#34;color:#228b22&#34;&gt;## Zeitzone setzen&lt;/span&gt;
+ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;kernel---image-erstellen&#34;&gt;Kernel - Image erstellen&lt;/h2&gt;
 &lt;p&gt;Damit das System beim booten alle nötigen Module laden kann, muss die mkinitcpio angepasst werden.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;                &lt;span style=&#34;color:#228b22&#34;&gt;## In der datei /etc/mkinitcpio.conf folgendes ändern&lt;/span&gt;
-        &lt;span style=&#34;color:#00688b&#34;&gt;MODULES&lt;/span&gt;=(ext4)
-        &lt;span style=&#34;color:#00688b&#34;&gt;HOOKS&lt;/span&gt;=(base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)
-                &lt;span style=&#34;color:#228b22&#34;&gt;## Kernel neu &amp;#34;bauen&amp;#34;&lt;/span&gt;
-        mkinitcpio -p linux
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#228b22&#34;&gt;## In der datei /etc/mkinitcpio.conf folgendes ändern&lt;/span&gt;
+&lt;span style=&#34;color:#00688b&#34;&gt;MODULES&lt;/span&gt;=(ext4)
+&lt;span style=&#34;color:#00688b&#34;&gt;HOOKS&lt;/span&gt;=(base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)
+
+&lt;span style=&#34;color:#228b22&#34;&gt;## Kernel neu &amp;#34;bauen&amp;#34;&lt;/span&gt;
+mkinitcpio -p linux
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;bootloader-installieren&#34;&gt;Bootloader installieren&lt;/h2&gt;
 &lt;p&gt;Ich nehme den UEFI - Bootloader von systemd, der ist einfach und unkompliziert.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        bootctl install
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;bootctl install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Die folgenden Datei muss angelegt werden&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        vim /boot/loader/entries/arch.conf
-            &lt;span style=&#34;color:#228b22&#34;&gt;## mit folgendem Inhalt&lt;/span&gt;
-        title    Arch Linux
-        linux    /vmlinuz-linux
-        initrd   /initramfs-linux.img
-        options  &lt;span style=&#34;color:#00688b&#34;&gt;cryptdevice&lt;/span&gt;=/dev/sda2:main &lt;span style=&#34;color:#00688b&#34;&gt;root&lt;/span&gt;=/dev/mapper/main-root rw &lt;span style=&#34;color:#00688b&#34;&gt;lang&lt;/span&gt;=de &lt;span style=&#34;color:#00688b&#34;&gt;init&lt;/span&gt;=/usr/lib/systemd/systemd &lt;span style=&#34;color:#00688b&#34;&gt;locale&lt;/span&gt;=de_DE.UTF-8
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn ein Fallback - Image gewünscht wird dann eine 2 Datei&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        vim /boot/loader/entries/arch-fallback.conf
-            &lt;span style=&#34;color:#228b22&#34;&gt;## mit folgendem Inhalt&lt;/span&gt;
-        title    Arch Linux Fallback
-        linux    /vmlinuz-linux
-        initrd   /initramfs-linux-fallback.img
-        options  &lt;span style=&#34;color:#00688b&#34;&gt;cryptdevice&lt;/span&gt;=/dev/sda2:main &lt;span style=&#34;color:#00688b&#34;&gt;root&lt;/span&gt;=/dev/mapper/main-root rw &lt;span style=&#34;color:#00688b&#34;&gt;lang&lt;/span&gt;=de &lt;span style=&#34;color:#00688b&#34;&gt;init&lt;/span&gt;=/usr/lib/systemd/systemd &lt;span style=&#34;color:#00688b&#34;&gt;locale&lt;/span&gt;=de_DE.UTF-8
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vim /boot/loader/entries/arch.conf
+&lt;span style=&#34;color:#228b22&#34;&gt;## mit folgendem Inhalt&lt;/span&gt;
+    title    Arch Linux
+    linux    /vmlinuz-linux
+    initrd   /initramfs-linux.img
+    options  &lt;span style=&#34;color:#00688b&#34;&gt;cryptdevice&lt;/span&gt;=/dev/sda2:main &lt;span style=&#34;color:#00688b&#34;&gt;root&lt;/span&gt;=/dev/mapper/main-root rw &lt;span style=&#34;color:#00688b&#34;&gt;lang&lt;/span&gt;=de &lt;span style=&#34;color:#00688b&#34;&gt;init&lt;/span&gt;=/usr/lib/systemd/systemd &lt;span style=&#34;color:#00688b&#34;&gt;locale&lt;/span&gt;=de_DE.UTF-8
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ein kleines Menü wird auch noch gebraucht&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        vim /boot/loader/loader.conf
-            &lt;span style=&#34;color:#228b22&#34;&gt;## Mit folgendem Inhalt&lt;/span&gt;
-        timeout &lt;span style=&#34;color:#b452cd&#34;&gt;5&lt;/span&gt;
-        default arch.conf
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;vim /boot/loader/loader.conf
+&lt;span style=&#34;color:#228b22&#34;&gt;## Mit folgendem Inhalt&lt;/span&gt;
+    timeout &lt;span style=&#34;color:#b452cd&#34;&gt;5&lt;/span&gt;
+    default arch.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;abschliesen-der-grundinstallation&#34;&gt;Abschliesen der Grundinstallation&lt;/h2&gt;
 &lt;p&gt;der Benutzer &lt;em&gt;root&lt;/em&gt; braucht noch ein Passwort&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        passwd
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;passwd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;danach das System verlassen, die Platten aushängen und neu starten.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;        &lt;span style=&#34;color:#658b00&#34;&gt;exit&lt;/span&gt;
-        umount /mnt/{boot,home,}
-        reboot
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Natürlich fehlt jetzt noch einiges, was aber nach dem Neustart alles erledigt werden kann. Dabei hilft am besten das &lt;a href=&#34;https://wiki.archlinux.org/title/General_recommendations&#34;&gt;arch-wiki&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#658b00&#34;&gt;exit&lt;/span&gt;
+umount /mnt/{boot,home,}
+reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;todo&#34;&gt;ToDo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dienste wie ACPIC, DBUS, CUPS installieren und starten&lt;/li&gt;
+&lt;li&gt;Benutzer anlegen&lt;/li&gt;
+&lt;li&gt;Grafische Oberfläche installieren&lt;/li&gt;
+&lt;li&gt;usw&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dabei hilft am besten das &lt;a href=&#34;https://wiki.archlinux.org/title/General_recommendations&#34;&gt;arch-wiki&lt;/a&gt;&lt;/p&gt;
 - https://blog.cn-sz.eu/posts/verschluesselte_arch_installation/ - Christian Schnitz</description>
         </item>
     
